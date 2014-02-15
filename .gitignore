@@ -1,2 +1,3 @@
 .vagrant/
 config
+db_setup.md
