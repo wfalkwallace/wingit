@@ -3,6 +3,8 @@ Models for SQL classes
 
 """
 
+import datetime
+
 class Airport(db_name):
 	__tablename__ = 'airports'
 
@@ -12,6 +14,14 @@ class Airport(db_name):
 	city = name = db_name.Column(db_name.String(64))
 	country = db_name.Column(db_name.String(64))
 	created_at = db_name.Column(db_name.DateTime)
+
+	def __init__(self, air_id, code, name, city, country):
+		self.airport_id = air_id
+		self.code = code
+		self.name = name
+		self.city = city
+		self.country = country
+		self.create_at = datetime.datetime.now()
 
 class Flight(db_name)
 	__tablename__ = 'flights'
@@ -25,6 +35,14 @@ class Flight(db_name)
 	origin = db.Column(db.Integer, db_name.ForeignKey('airports.airport_id'))
 	dest = db.Column(db.Integer, db_name.ForeignKey('airports.airport_id'))
 
+	def __init__(self, flight_id, etd, eta, price):
+		self.flight_id = air_id
+		self.etd = etd
+		self.eta = eta
+		self.price = price
+		self.create_at = datetime.datetime.now()
+
+
 class Feature(db_name):
 	__tablename__ = 'features'
 	feature_id = db_name.Column(db_name.Integer, primary_key = True)
@@ -35,3 +53,8 @@ class Feature(db_name):
 	#foreign key
 	place = db_name.Column(db_name.Integer, db_name.ForeignKey('airports.airport_id'))
 
+	def __init__(self, feature_id, temp, beer_price, created_at):
+		self.feature_id = feature_id
+		self.temp = temp
+		self.beer_price = beer_price
+		self.created_at = created_at 
