@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/static/css/bootstrap.min.css">
   <style>
     body {
+      padding-top: 50px;
       padding-bottom: 20px;
     }
   </style>
@@ -28,7 +29,7 @@
   <div class="background"></div>     
 
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3 col-md-offset-1">
       <div class="panel">
         <div class="panel-heading">
           <h3 class="panel-title">Search for Flights:</h3>
@@ -36,23 +37,35 @@
         <div class="panel-body">
           <form role="form" action="/search" METHOD="POST">
             <div class="form-group">
-              <label class="sr-only" for="contact-name">Origin*</label>
-              <input type="text" class="form-control" name="from" id="form-origin" placeholder="Origin" required>
+              <label class="sr-only" for="contact-name">Leaving From</label>
+              <input type="text" class="form-control" name="from" id="form-origin" placeholder="Leaving From" required>
             </div>
             <div class="form-group">
               <label class="sr-only" for="contact-phone">Maximum Price</label>
-              <input type="number" class="form-control" name="price" id="form-price" placeholder="Maximum Price">
+              <input type="text" class="form-control" name="price" id="form-price" placeholder="Max. Price (USD)">
             </div>
             <div class="form-group">
               <label class="sr-only" for="contact-email">Minimum Temperature</label>
-              <input type="number" class="form-control" name="mintemp" id="form-mintemp" placeholder="Minimum Temperature">
+              <input type="text" class="form-control" name="mintemp" id="form-mintemp" placeholder="Min. Temperature (&#8457;)">
             </div>
             <div class="form-group">
               <label class="sr-only" for="contact-email">Maximum Temperature</label>
-              <input type="number" class="form-control" name="maxtemp" id="form-maxtemp" placeholder="Maximum Temperature">
+              <input type="text" class="form-control" name="maxtemp" id="form-maxtemp" placeholder="Max. Temperature (&#8457;)">
             </div>
-            <div class="btn-group widen">
-              <button type="submit" class="btn btn-green widen">Submit</button>
+            <div class="form-group">
+            <div class="btn-group btn-group-justified" data-toggle="buttons">
+                <label class="btn btn-primary">
+                  <input type="radio" name="oneway" id="option1"> One Way
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="roundtrip" id="option2"> Roundtrip
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="btn-group widen">
+                <button type="submit" class="btn btn-success widen">Submit</button>
+              </div>
             </div>
           </form>
         </div>
