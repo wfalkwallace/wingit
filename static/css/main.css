@@ -1,4 +1,7 @@
 .background { 
+	position: absolute;
+	top:0;
+	left:0;
 	background-image: url('/static/img/background_hi.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -29,15 +32,20 @@ footer {
 	margin:auto;
 	padding-top: 10px;
 	background-color: #1964ce;
+	opacity:0.4;
 	color: #fff;
 }
 
-footer > a {
-	color: #ddd;
+#footer-link {
+	color: #ccc;
 }
 
-footer > a :hover {
-	color: #aaa;
+
+#footer-link :hover,
+#footer-link :focus {
+	color: #000 !important;
+	text-decoration: none;
+	background-color: none;
 }
 
 
