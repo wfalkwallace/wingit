@@ -1,8 +1,0 @@
-flights:
-id | code | name | city | country | from | to | etd | eta | *duration* | *connections?* | *nearest city* | *open seats* | price
-
-features:
-id | code | temp | beer_price
-
-
-
