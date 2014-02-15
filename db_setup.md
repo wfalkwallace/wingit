@@ -1,11 +1,13 @@
 SQL Table Structure
+
 ===================
 
 table | feature | feature | feature | feature | feature | feature | feature | feature | feature | feature
 :-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-
-flights | id | from (airport/id) | to (airport/id) | etd | eta | ~~duration~~ | ~~connections?~~ | ~~nearest city~~ | ~~open seats~~ | price
-features | id | place (airport/id) | temp | beer_price
-airports | id | code | name | city | country 
+flights | flight_id | origin (airport/id) | dest (airport/id) | etd | eta | ~~duration~~ | ~~connections?~~ | ~~nearest city~~ | ~~open seats~~ | price
+features | feature_id | place (airport/id) | temp | beer_price
+airports | airport_id | code | name | city | country 
+
 
 ---
 
@@ -30,7 +32,7 @@ Then
 
 ```
 CREATE TABLE airports(
-	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	airport_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	code VARCHAR(3) NOT NULL,
 	name VARCHAR(64) NOT NULL,
 	city VARCHAR(64) NULL,
@@ -39,28 +41,28 @@ CREATE TABLE airports(
 );
 
 CREATE TABLE flights(
-	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	from INT NOT NULL,
-	to INT NOT NULL,
+	flight_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	origin INT NOT NULL,
+	dest INT NOT NULL,
 	etd DATETIME NOT NULL,
 	eta DATETIME NOT NULL,
 	price DECIMAL NOT NULL,
 	created_at DATETIME,
 
-	FOREIGN KEY (from, to) 
-	        REFERENCES airports(id)
+	FOREIGN KEY (origin, dest) 
+	        REFERENCES airports(airport_id)
 	        ON DELETE CASCADE
 );
 
 CREATE TABLE features(
-	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	feature_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	place INT NOT NULL,
 	temp INT NOT NULL,
 	beer_price DECIMAL NOT NULL,
 	created_at DATETIME,
 
 	FOREIGN KEY (place) 
-	        REFERENCES airports(id)
+	        REFERENCES airports(airport_id)
 	        ON DELETE CASCADE
 );
 
