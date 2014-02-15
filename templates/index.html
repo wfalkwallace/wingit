@@ -27,12 +27,48 @@
   <![endif]-->
   <div class="background"></div>     
 
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">Search for Flights:</h3>
+        </div>
+        <div class="panel-body">
+          <form role="form" action="/search" METHOD="POST">
+            <div class="form-group">
+              <label class="sr-only" for="contact-name">Origin*</label>
+              <input type="text" class="form-control" name="from" id="form-origin" placeholder="Origin" required>
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="contact-phone">Maximum Price</label>
+              <input type="number" class="form-control" name="price" id="form-price" placeholder="Maximum Price">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="contact-email">Minimum Temperature</label>
+              <input type="number" class="form-control" name="mintemp" id="form-mintemp" placeholder="Minimum Temperature">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="contact-email">Maximum Temperature</label>
+              <input type="number" class="form-control" name="maxtemp" id="form-maxtemp" placeholder="Maximum Temperature">
+            </div>
+            <div class="btn-group widen">
+              <button type="submit" class="btn btn-green widen">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+
+    </div>
+
+  </div>
 
 
 
-    <footer class="text-center">
-      <p>&copy; Wing It 2014 | <a href="/contact">Contact Us</a></p>
-    </footer>
+  <footer class="text-center">
+    <p>&copy; Wing It 2014 | <a id="footer-link" href="/contact">Contact Us</a></p>
+  </footer>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/static/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
