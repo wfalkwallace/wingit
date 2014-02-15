@@ -28,11 +28,17 @@ footer {
 	width:100%;
 	margin:auto;
 	padding-top: 10px;
-	background-color: #76C6B9;
-	color: #FFF;
+	background-color: #1964ce;
+	color: #fff;
 }
 
+footer > a {
+	color: #ddd;
+}
 
+footer > a :hover {
+	color: #aaa;
+}
 
 
 
