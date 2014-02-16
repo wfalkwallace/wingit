@@ -57,7 +57,6 @@ class Feature(db.Model):
 	created_at = datetime.datetime.now()
 
 	def __init__(self, city, country, temperature, beer_price):
-		#self.feature_id = feature_id
 		self.city = city
 		self.country = country
 		self.temp = temperature
