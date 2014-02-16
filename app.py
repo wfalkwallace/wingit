@@ -124,11 +124,7 @@ def search():
 								max_price=price,
 								flight_dict=flight_dict)
 	else: # request.method == "GET"
-		return render_template("search.html")
-
-@app.route("/results")
-def results():
-	return render_template("results.html", flights = flights_dict)
+		return redirect("/")
 
 @app.route("/contact")
 def contact():

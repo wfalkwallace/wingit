@@ -54,14 +54,39 @@
         </form>
       </div>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-8">
 
-      <div class="list-group">
-      <div class="list-group">
-        {% for arr_city, trip_dict in flight_dict.iteritems() %}
-          <h4 class="list-group-item-heading">{{ arr_city }} | $ {{ trip_dict["price"] }} | {{ trip_dict["temperature"] }}&#8457;</h4>
-        {% endfor %}
-      </div>
+      <div class="panel">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th>
+                Destination
+              </th>
+              <th>
+                Temperature
+              </th>
+              <th>
+                Price
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for arr_city, trip_dict in flight_dict.iteritems() %}
+            <tr>
+              <td>
+                {{ arr_city }}
+              </td>
+              <td>
+                {{ trip_dict["temperature"] }}&#8457;
+              </td>
+              <td>
+                ${{ trip_dict["price"] }}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
       </div>
 
     </div>
