@@ -75,6 +75,10 @@ def search():
 		# depart_date = request.form['depart']
 		# return_date = request.form['return']
 		price = request.form['price']
+		print type(price)
+		if not price:
+			price = 2000
+			# print "price is: ", price
 
 		# print 'origin: ', origin 
 
@@ -101,8 +105,12 @@ def search():
 
 		flight_dict = {}
 		for item in flight:
-			r = requests.get('https://thepulseapi.earthnetworks.com/data/observations/v1/current?location='+str(item.arr_lat)+','+str(item.arr_long)+'&locationtype=latitudelongitude&units=english&cultureinfo=en-en&verbose=true&access_token=SU6OGOpKSMDeD9B3DtqQvEF3ynsI').json()['temperature']
-			print 'request: ', r
+			r = requests.get('https://thepulseapi.earthnetworks.com/data/observations/v1/current?location='+str(item.arr_lat)+','+str(item.arr_long)+'&locationtype=latitudelongitude&units=english&cultureinfo=en-en&verbose=true&access_token=SU6OGOpKSMDeD9B3DtqQvEF3ynsI').json()
+			# print 'request: ', r
+			if 'temperature' in r.keys():
+				r = r['temperature']
+			else:
+				r = "Try again"
 			flight_dict[item.arr_city] = {
 				"dep_city" : item.dep_city,
 				"arr_country" : item.arr_country,
@@ -112,7 +120,7 @@ def search():
 				#"beer_price" : "",
 				"temperature" : r
 			}
-			print item.arr_city, item.arr_country
+			# print item.arr_city, item.arr_country
 
 		
 

@@ -54,19 +54,19 @@
         </form>
       </div>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-7 col-md-offset-1">
 
       <div class="panel">
-        <table class="table text-center">
+        <table class="table">
           <thead>
             <tr>
               <th>
                 Destination
               </th>
-              <th>
+              <th class="text-center">
                 Temperature
               </th>
-              <th>
+              <th class="text-center">
                 Price
               </th>
             </tr>
@@ -77,10 +77,10 @@
               <td>
                 {{ arr_city }}
               </td>
-              <td>
+              <td class="text-center">
                 {{ trip_dict["temperature"] }}&#8457;
               </td>
-              <td>
+              <td class="text-center">
                 ${{ trip_dict["price"] }}
               </td>
             </tr>
