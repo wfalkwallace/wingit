@@ -96,6 +96,7 @@ def search():
 		all_airports = Airport.query.all()
 		for airport in all_airports:
 			print airport
+
 		all_airports = Airport.query.count()
 		print 'all_airport_count', all_airports
 		# all_flights = Flight.query.filter_by(
