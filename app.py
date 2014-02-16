@@ -75,14 +75,13 @@ def search():
 		depart_date = request.form['depart']
 		return_date = request.form['return']
 		price = request.form['price']
-		trip_type = request.form['trip-type']
 
-		print 'origin: ', origin 
+		# print 'origin: ', origin 
 
 		#get from origin
 		valid_flights_from_origin = Flight.query.filter_by(
-			dep_city = departing_city,
-			dep_country = departing_country
+			dep_city = origin_city,
+			dep_country = "USA"
 			).all()
 		print 'valid flights from origin', valid_flights_from_origin
 
@@ -117,7 +116,7 @@ def search():
 
 		#build db + query pint
 		return render_template("results.html", 
-								origin=origin, 
+								origin=origin_city, 
 								depart_date=depart_date,
 								return_date=return_date,
 								price=price)
@@ -130,7 +129,7 @@ def results():
 
 @app.errorhandler(404)
 def page_not_found(error):
-	return render_template("404.html"), 404
+	return render_template("search.html"), 404
 
 
 
