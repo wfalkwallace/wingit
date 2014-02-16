@@ -82,7 +82,7 @@ def search():
 		# print request.form['roundtrip']
 		print 'origin: ', origin 
 		
-		origin_airport_id = Airport.query.filter_by(code = origin).first().airport_id
+		origin_airport_id = Airport.query.filter_by(code=origin).first().airport_id
 		print 'origin_airport_id ', origin_airport_id
 
 		all_flights = Flight.query.filter_by(
