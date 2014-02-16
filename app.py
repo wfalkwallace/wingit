@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, render_template, request, session, redirect, flash
 from flask.ext.sqlalchemy import SQLAlchemy
+import requests
 import datetime
 app = Flask(__name__)
 app.debug = True
@@ -124,6 +125,14 @@ def search():
 @app.route("/results")
 def results():
 	return render_template("results.html", flights = flights_dict)
+
+@app.route("/contact")
+def contact():
+	return render_template("contact.html")
+
+@app.route("/contact/mail")
+def mail():
+	https://api.sendgrid.com/api/mail.send.json
 
 @app.errorhandler(404)
 def page_not_found(error):
