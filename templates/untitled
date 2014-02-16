@@ -1,0 +1,304 @@
+[,[[,"ad","[,["ZFV","PHL"],,[
+
+
+
+[,[,
+"ROM","Rome",41.9,12.4833333333,["CIA","FCO"],["CIA","FCO"],"Italy",,"IT",,,[[,"CIA","Rome Ciampino","Rome","ROM","Italy",41.7988889,12.595,,"IT"],[,"FCO","Rome Leonardo da Vinci-Fiumicino","Rome","ROM","Italy",41.8002778,12.2388889,,"IT"]],1,114700,1],
+
+
+[,[,
+"CGB","Cuiabu00e1",-15.653056,-56.116667,["CGB"],["CGB"],"Brazil","MT","BR","Mato Grosso",,[[,"CGB","Cuiaba M. Rondon","Cuiabu00e1","CGB","Brazil",-15.653056,-56.116667,"MT","BR"]],1,173500,3],
+
+[,[,
+"LON","London",51.3097222222,-0.324722222222,["LGW","LTN","LCY","SEN","LHR","BQH","XQE","QQS","STN"],["LGW","LTN","LCY","LHR","STN"],"United Kingdom","EN","GB",,,[[,"LGW","London Gatwick","London","LON","United Kingdom",51.1480556,-0.1902778,"EN","GB"],[,"LTN","London Luton","London","LON","United Kingdom",51.8747222,-0.3683333,"EN","GB"],[,"LCY","London City","London","LON","United Kingdom",51.505,0.05416667,"EN","GB"],[,"LHR","London Heathrow","London","LON","United Kingdom",51.4775,-0.4613889,"EN","GB"],[,"STN","London Stansted","London","LON","United Kingdom",51.885,0.235,"EN","GB"]],1,89000,1],
+
+[,[,
+"YYR","Happy Valley-Goose Bay",53.3194444,-60.410556,["YYR"],["YYR"],"Canada","NL","CA","Newfoundland and Labrador",,[[,"YYR","Goose Bay","Happy Valley-Goose Bay","YYR","Canada",53.3194444,-60.410556,"NL","CA"]],1,125000,6],
+
+[,[,
+"GDL","Guadalajara",20.5216667,-103.31111,["GDL"],["GDL"],"Mexico",,"MX",,,[[,"GDL","Guadalajara M. Hidalgo","Guadalajara","GDL","Mexico",20.5216667,-103.31111,,"MX"]],1,57000,3],
+
+[,[,
+"TLS","Toulouse",43.635,1.36777778,["TLS","XYT"],["TLS"],"France",,"FR",,,[[,"TLS","Toulouse Blagnac","Toulouse","TLS","France",43.635,1.36777778,,"FR"]],1,111900,3],
+
+[,[,
+"ROV","Rostov-on-Don",47.2583333,39.8180556,["ROV"],["ROV"],"Russia",,"RU",,,[[,"ROV","Rostov","Rostov-on-Don","ROV","Russia",47.2583333,39.8180556,,"RU"]],1,84400,3],
+
+[,[,
+"FAI","Fairbanks",64.815,-147.85639,["FBK","FAI","MTX","PII"],["FAI"],"United States","AK","US","Alaska",,[[,"FAI","Fairbanks International","Fairbanks","FAI","United States",64.815,-147.85639,"AK","US"]],1,96100,6],
+
+[,[,
+"PVH","Pu00f4rto Velho",-8.7091667,-63.902222,["PVH"],["PVH"],"Brazil","RO","BR","Rondonia",,[[,"PVH","Porto Velho Belmonte","Pu00f4rto Velho","PVH","Brazil",-8.7091667,-63.902222,"RO","BR"]],1,172200,3],
+
+[,[,
+"SYZ","Shiru0101z",29.5402778,52.5886111,["SYZ"],["SYZ"],"Iran",,"IR",,,[[,"SYZ","Shiraz Shahid Dastghaib International","Shiru0101z","SYZ","Iran",29.5402778,52.5886111,,"IR"]],3,,3],
+
+[,[,
+"TCI","Tenerife",28.4730555556,-16.3327777778,["TFN","TFS"],["TFN","TFS"],"Spain","CI","ES",,,[[,"TFN","Tenerife Norte Los Rodeos","Tenerife","TCI","Spain",28.4827778,-16.341667,"CI","ES"],[,"TFS","Tenerife Sur Reina Sofia","Tenerife","TCI","Spain",28.0444444,-16.5725,"CI","ES"]],1,102800,7],
+
+[,[,
+"FIH","Kinshasa",-4.3858333,15.4444444,["FIH","NLO"],["FIH"],"Congo (DRC)",,"CD",,,[[,"FIH","Kinshasa N'djili International","Kinshasa","FIH","Congo (DRC)",-4.3858333,15.4444444,,"CD"]],1,147000,3],
+
+[,[,
+"IXB","Bagdogra",26.6811111,88.3286111,["IXB"],["IXB"],"India",,"IN"],[[,"IXB","Bagdogra","Bagdogra","IXB","India",26.6811111,88.3286111,,"IN"]],4,,3],
+
+[,[,
+"MEX","Mexico City",19.4363889,-99.072222,["AZP","TLC","MEX"],["MEX"],"Mexico",,"MX",,,[[,"MEX","Mexico City Benito Juarez International","Mexico City","MEX","Mexico",19.4363889,-99.072222,,"MX"]],1,53400,3],
+
+[,[,
+"MOW","Moscow",55.6555555556,37.5222222222,["DME","VKO","SVO","BKA"],["DME","VKO","SVO"],"Russia",,"RU",,,[[,"DME","Moscow Domodedovo","Moscow","MOW","Russia",55.4088889,37.9063889,,"RU"],[,"VKO","Moscow Vnukovo","Moscow","MOW","Russia",55.5916667,37.2613889,,"RU"],[,"SVO","Moscow Sheremetyevo","Moscow","MOW","Russia",55.9727778,37.4147222,,"RU"]],1,71700,1],
+
+[,[,
+"LOS","Lagos",6.5775,3.32111111,["LOS"],["LOS"],"Nigeria",,"NG",,,[[,"LOS","Lagos M. Muhammed","Lagos","LOS","Nigeria",6.5775,3.32111111,,"NG"]],1,102600,6],
+
+[,[,
+"KTN","Ketchikan",55.3555556,-131.71389,["KTN"],["KTN"],"United States","AK","US","Alaska",,[[,"KTN","Ketchikan International","Ketchikan","KTN","United States",55.3555556,-131.71389,"AK","US"]],1,84600,3],
+
+[,[,
+"GOH","Nuuk",64.1908333,-51.678056,["GOH"],["GOH"],"Greenland",,"GL",,,[[,"GOH","Nuuk","Nuuk","GOH","Greenland",64.1908333,-51.678056,,"GL"]],4,,3],
+
+[,[,
+"DKR","Dakar",14.7425,-17.493333,["DKR"],["DKR"],"Senegal",,"SN",,,[[,"DKR","Dakar Leopold Sedar Senghor","Dakar","DKR","Senegal",14.7425,-17.493333,,"SN"]],1,138500,3],
+
+[,[,
+"MGQ","Mogadishu",2.01472222,45.305,["MGQ"],["MGQ"],"Somalia",,"SO",,,[[,"MGQ","Mogadishu Aden Adde International","Mogadishu","MGQ","Somalia",2.01472222,45.305,,"SO"]],4,,3],
+
+[,[,
+"SAL","San Salvador",13.4408333,-89.055833,["SAL"],["SAL"],"El Salvador",,"SV",,,[[,"SAL","San Salvador El Salvador International","San Salvador","SAL","El Salvador",13.4408333,-89.055833,,"SV"]],1,55100,3],
+
+[,[,
+"NNM","Naryan-Mar",67.6402778,53.1225,["NNM"],["NNM"],"Russia",,"RU",,,[[,"NNM","Naryan-Mar","Naryan-Mar","NNM","Russia",67.6402778,53.1225,,"RU"]],4,,3],
+
+[,[,
+"TAS","Tashkent",41.2577778,69.2811111,["TAS"],["TAS"],"Uzbekistan",,"UZ",,,[[,"TAS","Tashkent International","Tashkent","TAS","Uzbekistan",41.2577778,69.2811111,,"UZ"]],1,292300,3],
+
+[,[,
+"EDI","Edinburgh",55.95,-3.3725,["EDI"],["EDI"],"United Kingdom","SC","GB",,,[[,"EDI","Edinburgh","Edinburgh","EDI","United Kingdom",55.95,-3.3725,"SC","GB"]],1,92100,3],
+
+[,[,
+"GEO","Georgetown",6.49861111,-58.254167,["GEO"],["GEO"],"Guyana",,"GY",,,[[,"GEO","Georgetown Cheddi Jagan International","Georgetown","GEO","Guyana",6.49861111,-58.254167,,"GY"]],4,,3],
+
+[,[,
+"CPH","Copenhagen",55.6202778,12.6502778,["RKE","CPH"],["CPH"],"Denmark",,"DK",,,[[,"CPH","Copenhagen Kastrup","Copenhagen","CPH","Denmark",55.6202778,12.6502778,,"DK"]],1,86900,3],
+
+[,[,
+"YXJ","Fort St. John",56.2380556,-120.74028,["YXJ"],["YXJ"],"Canada","BC","CA","British Columbia",,[[,"YXJ","Fort St John North Peace","Fort St. John","YXJ","Canada",56.2380556,-120.74028,"BC","CA"]],4,,3],
+
+[,[,
+"KWI","Kuwait City",29.2266667,47.9688889,["KWI"],["KWI"],"Kuwait",,"KW",,,[[,"KWI","Kuwait International","Kuwait City","KWI","Kuwait",29.2266667,47.9688889,,"KW"]],1,163900,3],
+
+[,[,
+"EUG","Eugene",44.1247222,-123.21194,["EUG"],["EUG"],"United States","OR","US","Oregon",,[[,"EUG","Eugene","Eugene","EUG","United States",44.1247222,-123.21194,"OR","US"]],1,42200,3],
+
+[,[,
+"SJU","San Juan",18.4394444,-66.001944,["SJU","SIG"],["SJU"],"Puerto Rico",,"PR",,,[[,"SJU","San Juan Luis Munoz Marin Int'l","San Juan","SJU","Puerto Rico",18.4394444,-66.001944,,"PR"]],1,41100,1],
+
+[,[,
+"LIM","Lima",-12.021944,-77.114444,["LIM"],["LIM"],"Peru",,"PE",,,[[,"LIM","Lima J. Chavez","Lima","LIM","Peru",-12.021944,-77.114444,,"PE"]],1,81700,1],
+
+[,[,
+"NHV","Nuku Hiva",-8.7955556,-140.22889,["NHV"],["NHV"],"French Polynesia",,"PF",,,[[,"NHV","Nuku Hiva","Nuku Hiva","NHV","French Polynesia",-8.7955556,-140.22889,,"PF"]],3,,8],
+
+[,[,
+"BLR","Bangalore",13.1988889,77.7055556,["BLR"],["BLR"],"India",,"IN",,,[[,"BLR","Bengaluru Kempegowda International","Bangalore","BLR","India",13.1988889,77.7055556,,"IN"]],1,159000,3],
+
+[,[,
+"PPT","Tahiti",-17.553889,-149.60722,["PPT"],["PPT"],"French Polynesia",,"PF",,,[[,"PPT","Tahiti Faaa","Tahiti","PPT","French Polynesia",-17.553889,-149.60722,,"PF"]],1,154600,1],
+
+[,[,
+"CMB","Colombo",7.18027778,79.8852778,["CMB","RML"],["CMB"],"Sri Lanka",,"LK",,,[[,"CMB","Colombo Bandaranaike International","Colombo","CMB","Sri Lanka",7.18027778,79.8852778,,"LK"]],1,137800,3],
+
+[,[,
+"PIU","Piura",-5.2058333,-80.616389,["PIU"],["PIU"],"Peru",,"PE",,,[[,"PIU","Piura","Piura","PIU","Peru",-5.2058333,-80.616389,,"PE"]],4,,3],
+
+[,[,
+"URC","Urumqi",43.9072222,87.4741667,["URC"],["URC"],"China",,"CN",,,[[,"URC","Urumqi Diwopu International","Urumqi","URC","China",43.9072222,87.4741667,,"CN"]],1,136900,6],
+
+[,[,
+"LAD","Luanda",-8.8583333,13.2311111,["LAD"],["LAD"],"Angola",,"AO",,,[[,"LAD","Luanda 4 de Fevereiro","Luanda","LAD","Angola",-8.8583333,13.2311111,,"AO"]],1,184600,3],
+
+[,[,
+"OUL","Oulu",64.93,25.3544444,["OUL"],["OUL"],"Finland",,"FI",,,[[,"OUL","Oulu","Oulu","OUL","Finland",64.93,25.3544444,,"FI"]],1,134200,3],
+
+[,[,
+"BUH","Bucharest",44.5666666667,26.1,["BBU","OTP"],["BBU","OTP"],"Romania",,"RO",,,[[,"BBU","Bucharest Baneasa - Aurel Vlaicu","Bucharest","BUH","Romania",44.5033333,26.1022222,,"RO"],[,"OTP","Bucharest Henri Coanda","Bucharest","BUH","Romania",44.5722222,26.1022222,,"RO"]],1,103100,3],
+
+[,[,
+"YZV","Sept-Iles",50.2233333,-66.265556,["YZV"],["YZV"],"Canada","QC","CA","Quebec",,[[,"YZV","Sept-Iles","Sept-Iles","YZV","Canada",50.2233333,-66.265556,"QC","CA"]],1,95300,3],
+
+[,[,
+"SSA","Salvador",-12.911111,-38.331111,["SSA"],["SSA"],"Brazil","BA","BR","Bahia",,[[,"SSA","Salvador Luis R. Magalhaes","Salvador","SSA","Brazil",-12.911111,-38.331111,"BA","BR"]],1,174400,8],
+
+[,[,
+"SCO","Aktau",43.86,51.0919444,["SCO"],["SCO"],"Kazakhstan",,"KZ",,,[[,"SCO","Aktau","Aktau","SCO","Kazakhstan",43.86,51.0919444,,"KZ"]],4,,3],
+
+[,[,
+"BEG","Belgrade",44.8183333,20.3091667,["BEG","BJY"],["BEG"],"Serbia",,"RS",,,[[,"BEG","Belgrade Nikola Tesla","Belgrade","BEG","Serbia",44.8183333,20.3091667,,"RS"]],1,111700,3],
+
+[,[,
+"ASR","Kayseri",38.7702778,35.4955556,["ASR"],["ASR"],"Turkey",,"TR",,,[[,"ASR","Kayseri Erkilet","Kayseri","ASR","Turkey",38.7702778,35.4955556,,"TR"]],1,118000,3],
+
+[,[,
+"GGT","George Town",23.5625,-75.878056,["GGT"],["GGT"],"Bahamas",,"BS"],[[,"GGT","George Town Exuma International","George Town","GGT","Bahamas",23.5625,-75.878056,,"BS"]],4,,3],
+
+[,[,
+"YZF","Yellowknife",62.4686111,-114.44306,["YZF"],["YZF"],"Canada","NT","CA","Northwest Territories",,[[,"YZF","Yellowknife","Yellowknife","YZF","Canada",62.4686111,-114.44306,"NT","CA"]],1,82300,1],
+
+[,[,
+"BER","Berlin",52.3666667,13.5033333,["TXL","BER","SXF"],["TXL","BER","SXF"],"Germany",,"DE",,,[[,"TXL","Berlin Tegel","Berlin","BER","Germany",52.5597222,13.2877778,,"DE"],[,"BER","Berlin Brandenburg","Berlin","BER","Germany",52.3666667,13.5033333,,"DE"],[,"SXF","Berlin Schoenefeld","Berlin","BER","Germany",52.3786111,13.5205556,,"DE"]],1,124800,3],
+
+[,[,
+"OVB","Novosibirsk",55.0125,82.6505556,["OVB"],["OVB"],"Russia",,"RU",,,[[,"OVB","Novosibirsk Tolmachevo","Novosibirsk","OVB","Russia",55.0125,82.6505556,,"RU"]],1,109400,1],
+
+[,[,
+"BEL","Belu00e9m",-1.3791667,-48.476389,["BEL"],["BEL"],"Brazil","PA","BR","Para",,[[,"BEL","Belem Val de Cans","Belu00e9m","BEL","Brazil",-1.3791667,-48.476389,"PA","BR"]],1,108700,3],
+
+[,[,
+"NBO","Nairobi",-1.3191667,36.9277778,["NBO","WIL"],["NBO"],"Kenya",,"KE",,,[[,"NBO","Nairobi Jomo Kenyatta Int'l","Nairobi","NBO","Kenya",-1.3191667,36.9277778,,"KE"]],1,131300,1],
+
+[,[,
+"LAX","Los Angeles",33.9425,-118.40806,["LAX","VNY","WHP","QLO","CCD","JWC"],["LAX"],"United States","CA","US","California",,[[,"LAX","Los Angeles International","Los Angeles","LAX","United States",33.9425,-118.40806,"CA","US"]],1,32400,7],
+
+[,[,
+"THR","Tehran",35.6888889,51.3147222,["THR","IKA"],["THR"],"Iran",,"IR",,,[[,"THR","Tehran Mehrabad International","Tehran","THR","Iran",35.6888889,51.3147222,,"IR"]],4,,3],
+
+[,[,
+"CAI","Cairo",30.1219444,31.4055556,["CAI"],["CAI"],"Egypt",,"EG",,,[[,"CAI","Cairo International","Cairo","CAI","Egypt",30.1219444,31.4055556,,"EG"]],1,93500,7],
+
+[,[,
+"AMS","Amsterdam",52.3080556,4.76416667,["ZYA","AMS"],["AMS"],"Netherlands",,"NL",,,[[,"AMS","Amsterdam Schiphol","Amsterdam","AMS","Netherlands",52.3080556,4.76416667,,"NL"]],1,148800,3],
+
+[,[,
+"DXB","Dubai",25.2527778,55.3644444,["XNB","DWC","ZJF","DXB"],["DXB"],"United Arab Emirates",,"AE",,,[[,"DXB","Dubai International","Dubai","DXB","United Arab Emirates",25.2527778,55.3644444,,"AE"]],1,196900,1],
+
+[,[,
+"DEL","New Delhi",28.5663889,77.1030556,["DEL"],["DEL"],"India",,"IN",,,[[,"DEL","Delhi Indira Gandhi International","New Delhi","DEL","India",28.5663889,77.1030556,,"IN"]],1,150500,6],
+
+[,[,
+"BOG","Bogotu00e1",4.70166667,-74.146944,["BOG"],["BOG"],"Colombia",,"CO",,,[[,"BOG","Bogota Eldorado","Bogotu00e1","BOG","Colombia",4.70166667,-74.146944,,"CO"]],1,74000,1],
+
+[,[,
+"FOR","Fortaleza",-3.7763889,-38.5325,["FOR"],["FOR"],"Brazil","CE","BR","Ceara",,[[,"FOR","Fortaleza Pinto Martins","Fortaleza","FOR","Brazil",-3.7763889,-38.5325,"CE","BR"]],1,171600,3],
+
+[,[,
+"DNK","Dnipropetrovs'k",48.3572222,35.1005556,["DNK"],["DNK"],"Ukraine",,"UA",,,[[,"DNK","Dnipropetrovsk International","Dnipropetrovs'k","DNK","Ukraine",48.3572222,35.1005556,,"UA"]],4,,3],
+
+[,[,
+"SCW","Syktyvkar",61.6469444,50.845,["SCW"],["SCW"],"Russia",,"RU",,,[[,"SCW","Syktyvkar","Syktyvkar","SCW","Russia",61.6469444,50.845,,"RU"]],4,,3],
+
+[,[,
+"CAY","Cayenne",4.81972222,-52.360556,["CAY"],["CAY"],"French Guiana",,"GF",,,[[,"CAY","Cayenne Rochambeau","Cayenne","CAY","French Guiana",4.81972222,-52.360556,,"GF"]],4,,3],
+
+[,[,
+"YUT","Repulse Bay",66.5213889,-86.224722,["YUT"],["YUT"],"Canada","NU","CA","Nunavut",,[[,"YUT","Repulse Bay","Repulse Bay","YUT","Canada",66.5213889,-86.224722,"NU","CA"]],4,,3],
+
+[,[,
+"BOI","Boise",43.5644444,-116.22278,["BOI"],["BOI"],"United States","ID","US","Idaho",,[[,"BOI","Boise Air Term. (Gowen Fld)","Boise","BOI","United States",43.5644444,-116.22278,"ID","US"]],1,44400,3],
+
+[,[,
+"CAS","Casablanca",33.5569444,-7.6605556,["CAS","CMN"],["CMN"],"Morocco",,"MA",,,[[,"CMN","Casablanca Mohammed V","Casablanca","CAS","Morocco",33.3675,-7.59,,"MA"]],1,92900,3],
+
+[,[,
+"ANC","Anchorage",61.1744444,-149.99639,["MRI","ANC"],["ANC"],"United States","AK","US","Alaska",,[[,"ANC","Anchorage International","Anchorage","ANC","United States",61.1744444,-149.99639,"AK","US"]],1,78900,1],
+
+[,[,
+"LBV","Libreville",0.45861111,9.41222222,["LBV"],["LBV"],"Gabon",,"GA",,,[[,"LBV","Libreville Leon M'ba International","Libreville","LBV","Gabon",0.45861111,9.41222222,,"GA"]],1,123800,3],
+
+[,[,
+"UME","Umeu00e5",63.7919444,20.2827778,["UME"],["UME"],"Sweden",,"SE",,,[[,"UME","Umea","Umeu00e5","UME","Sweden",63.7919444,20.2827778,,"SE"]],1,107600,3],
+
+[,[,
+"LCG","A Coruu00f1a",43.3022222,-8.3772222,["LCG"],["LCG"],"Spain","SP","ES",,,[[,"LCG","A Coruna","A Coruu00f1a","LCG","Spain",43.3022222,-8.3772222,"SP","ES"]],1,113300,3],
+
+[,[,
+"SEA","Seattle",47.4488889,-122.30944,["LKE","SEA","BFI"],["SEA"],"United States","WA","US","Washington",,[[,"SEA","Seattle/Tacoma Sea/Tac","Seattle","SEA","United States",47.4488889,-122.30944,"WA","US"]],1,33400,6],
+
+[,[,
+"KJA","Krasnoyarsk",56.1730556,92.4933333,["KJA"],["KJA"],"Russia",,"RU",,,[[,"KJA","Krasnoyarsk Yemelyanovo","Krasnoyarsk","KJA","Russia",56.1730556,92.4933333,,"RU"]],1,114400,3],
+
+[,[,
+"RIX","Riga",56.9236111,23.9711111,["RIX"],["RIX"],"Latvia",,"LV",,,[[,"RIX","Riga International","Riga","RIX","Latvia",56.9236111,23.9711111,,"LV"]],1,106300,3],
+
+[,[,
+"BGF","Bangui",4.39777778,18.52,["BGF"],["BGF"],"Central African Republic",,"CF",,,[[,"BGF","Bangui Mpoko International","Bangui","BGF","Central African Republic",4.39777778,18.52,,"CF"]],4,,3],
+
+[,[,
+"STM","Santaru00e9m",-2.4225,-54.792778,["STM"],["STM"],"Brazil","PA","BR","Para",,[[,"STM","Santarem Maestro Wilson Fonseca","Santaru00e9m","STM","Brazil",-2.4225,-54.792778,"PA","BR"]],1,133400,3],
+
+[,[,
+"STO","Stockholm",59.5075,17.9402777778,["BMA","NYO","VST","ARN"],["BMA","NYO","ARN"],"Sweden",,"SE",,,[[,"BMA","Stockholm Bromma","Stockholm","STO","Sweden",59.3544444,17.9416667,,"SE"],[,"NYO","Stockholm Skavsta","Stockholm","STO","Sweden",58.7886111,16.9122222,,"SE"],[,"ARN","Stockholm Arlanda","Stockholm","STO","Sweden",59.6519444,17.9186111,,"SE"]],1,92300,6],
+
+[,[,
+"ADD","Addis Ababa",8.97777778,38.7994444,["ADD"],["ADD"],"Ethiopia",,"ET",,,[[,"ADD","Addis Ababa Bole International","Addis Ababa","ADD","Ethiopia",8.97777778,38.7994444,,"ET"]],1,129600,6],
+
+[,[,
+"PTY","Panama",9.07138889,-79.383333,["PTY","PAC"],["PTY"],"Panama",,"PA",,,[[,"PTY","Panama City Tocumen Int'l","Panama","PTY","Panama",9.07138889,-79.383333,,"PA"]],1,57600,3],
+
+[,[,
+"SFJ","Kangerlussuaq",67.0169444,-50.689444,["SFJ"],["SFJ"],"Greenland",,"GL",,,[[,"SFJ","Kangerlussuaq","Kangerlussuaq","SFJ","Greenland",67.0169444,-50.689444,,"GL"]],3,,6],
+
+[,[,
+"LUN","Lusaka",-15.330833,28.4525,["LUN"],["LUN"],"Zambia",,"ZM",,,[[,"LUN","Lusaka International","Lusaka","LUN","Zambia",-15.330833,28.4525,,"ZM"]],1,180400,3],
+
+[,[,
+"NUX","Novy Urengoy",66.0702778,76.5205556,["NUX"],["NUX"],"Russia",,"RU"],[[,"NUX","Novy Urengoy","Novy Urengoy","NUX","Russia",66.0702778,76.5205556,,"RU"]],1,140200,6],
+
+[,[,
+"REK","Reykjavik",64.15,-21.95,["RKV","KEF"],["KEF"],"Iceland",,"IS",,,[[,"KEF","Reykjavik Keflavik International","Reykjavik","REK","Iceland",63.985,-22.605556,,"IS"]],1,146300,1],
+
+[,[,
+"APL","Nampula",-15.105556,39.2816667,["APL","LFB"],["APL"],"Mozambique",,"MZ",,,[[,"APL","Nampula","Nampula","APL","Mozambique",-15.105556,39.2816667,,"MZ"]],4,,3],
+
+[,[,
+"BZE","Belize City",17.5391667,-88.308333,["TZA","BZE"],["BZE"],"Belize",,"BZ",,,[[,"BZE","Belize City Philip S.W.Goldson Int","Belize City","BZE","Belize",17.5391667,-88.308333,,"BZ"]],1,75100,3],
+
+[,[,
+"UAK","Narsarsuaq",61.1605556,-45.426111,["UAK"],["UAK"],"Greenland",,"GL",,,[[,"UAK","Narsarsuaq","Narsarsuaq","UAK","Greenland",61.1605556,-45.426111,,"GL"]],4,,3],
+
+[,[,
+"CCU","Kolkata",22.6547222,88.4466667,["CCU"],["CCU"],"India",,"IN",,,[[,"CCU","Kolkata/Calcutta Netaji Subhas Chandra","Kolkata","CCU","India",22.6547222,88.4466667,,"IN"]],1,154700,3],
+
+[,[,
+"PMW","Palmas",-10.291389,-48.356944,["PMW"],["PMW"],"Brazil","TO","BR","Tocantins",,[[,"PMW","Palmas","Palmas","PMW","Brazil",-10.291389,-48.356944,"TO","BR"]],4,,3],
+
+[,[,
+"SVX","Yekaterinburg",56.7430556,60.8027778,["SVX"],["SVX"],"Russia",,"RU",,,[[,"SVX","Yekaterinburg Koltsovo","Yekaterinburg","SVX","Russia",56.7430556,60.8027778,,"RU"]],1,99400,6],
+
+[,[,
+"BAK","Baku",40.5,49.8333333333,["GYD","ZXT"],["GYD"],"Azerbaijan",,"AZ",,,[[,"GYD","Baku Heydar Aliyev International","Baku","BAK","Azerbaijan",40.4675,50.0466667,,"AZ"]],1,101200,3],
+
+[,[,
+"LLW","Lilongwe",-13.789444,33.7811111,["LLW"],["LLW"],"Malawi",,"MW",,,[[,"LLW","Lilongwe Kamuzu International","Lilongwe","LLW","Malawi",-13.789444,33.7811111,,"MW"]],4,,3],
+
+[,[,
+"VOG","Volgograd",48.7825,44.3455556,["VOG"],["VOG"],"Russia",,"RU",,,[[,"VOG","Volgograd Gumrak","Volgograd","VOG","Russia",48.7825,44.3455556,,"RU"]],4,,3],
+
+[,[,
+"PDL","Ponta Delgada",37.7411111,-25.697778,["PDL"],["PDL"],"Portugal",,"PT",,,[[,"PDL","Ponta Delgada Joao Paulo II","Ponta Delgada","PDL","Portugal",37.7411111,-25.697778,,"PT"]],1,103200,7],
+
+[,[,
+"MHD","Mashhad",36.2341667,59.645,["MHD"],["MHD"],"Iran",,"IR",,,[[,"MHD","Mashhad Shahid Hashemi Nejad","Mashhad","MHD","Iran",36.2341667,59.645,,"IR"]],1,140100,3],
+
+[,[,
+"GKK","Kooddoo Island",0.73305556,73.4341667,["GKK"],["GKK"],"Maldives",,"MV"],[[,"GKK","Kooddoo Island","Kooddoo Island","GKK","Maldives",0.73305556,73.4341667,,"MV"]],4,,3],
+
+[,[,
+"KHG","Kashgar",39.5425,76.02,["KHG"],["KHG"],"China",,"CN"],[[,"KHG","Kashi","Kashgar","KHG","China",39.5425,76.02,,"CN"]],1,180300,3],
+
+[,[,
+"EBB","Entebbe",0.0425,32.4436111,["EBB"],["EBB"],"Uganda",,"UG",,,[[,"EBB","Entebbe International","Entebbe","EBB","Uganda",0.0425,32.4436111,,"UG"]],1,131500,3],
+
+[,[,
+"EYK","Beloyarsky",63.6905556,66.6997222,["EYK"],["EYK"],"Russia",,"RU",,,[[,"EYK","Beloyarsky","Beloyarsky","EYK","Russia",63.6905556,66.6997222,,"RU"]],4,,3],
+
+[,[,
+"SGC","Surgut",61.3436111,73.4019444,["SGC"],["SGC"],"Russia",,"RU",,,[[,"SGC","Surgut","Surgut","SGC","Russia",61.3436111,73.4019444,,"RU"]],1,141400,3],
+
+[,[,
+"EBL","Arbil",36.2377778,43.9630556,["EBL"],["EBL"],"Iraq",,"IQ",,,[[,"EBL","Erbil International","Arbil","EBL","Iraq",36.2377778,43.9630556,,"IQ"]],1,172500,3],
+
+[,[,
+"YVQ","Norman Wells",65.2816667,-126.79833,["YVQ"],["YVQ"],"Canada","NT","CA","Northwest Territories",,[[,"YVQ","Norman Wells","Norman Wells","YVQ","Canada",65.2816667,-126.79833,"NT","CA"]],4,,3],
+
+[,[,
+"MAB","Marabu00e1",-5.3686111,-49.138056,["MAB"],["MAB"],"Brazil","PA","BR","Para",,[[,"MAB","Maraba","Marabu00e1","MAB","Brazil",-5.3686111,-49.138056,"PA","BR"]],4,,3]],,[,,2]]",,1]],[,[[,"b_sshk","ie_21ba94be"]],"136334114"]]
