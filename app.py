@@ -55,18 +55,18 @@ class Flight(db.Model):
 		arrival_city, arrival_country, arrival_latitude, arrival_longitude, depart, arrive, price):
 		#self.flight_id = air_id
 
-	self.dep_city = departing_city
-	self.dep_country = departing_country
-	self.dep_lat = departing_latitude
-	self.dep_long = departing_longitude
-	self.arr_city = arrival_city
-	self.arr_country = arrival_city
-	self.arr_lat = arrival_latitude
-	self.arr_long = arrival_longitude
-	self.depart = depart
-	self.arrive = arrive
-	self.price = price
-	self.created_at = datetime.datetime.now()
+		self.dep_city = departing_city
+		self.dep_country = departing_country
+		self.dep_lat = departing_latitude
+		self.dep_long = departing_longitude
+		self.arr_city = arrival_city
+		self.arr_country = arrival_city
+		self.arr_lat = arrival_latitude
+		self.arr_long = arrival_longitude
+		self.depart = depart
+		self.arrive = arrive
+		self.price = price
+		self.created_at = datetime.datetime.now()
 
 
 class Feature(db.Model):
@@ -79,11 +79,11 @@ class Feature(db.Model):
 
 	def __init__(self, city, country, temperature, beer_price):
 		#self.feature_id = feature_id
-	self.city = city
-	self.country = country
-	self.temp = temperature
-	self.beer_price = beer_price
-	self.created_at = datetime.datetime.now()
+		self.city = city
+		self.country = country
+		self.temp = temperature
+		self.beer_price = beer_price
+		self.created_at = datetime.datetime.now()
 
 
 @app.route("/")
