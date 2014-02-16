@@ -6,53 +6,6 @@ app.config.from_object('config.flask_config')
 db = SQLAlchemy(app)
 #from models import Flight, Airport, Feature
 
-@app.route("/")
-def home():
-	return render_template("search.html")
-
-@app.route("/search", methods=["GET", "POST"])
-def search():
-	if request.method == "POST":
-		origin = request.form['from']
-		depart_date = request.form['depart']
-		return_date = request.form['return']
-		price = request.form['price']
-
-		# print request.form['oneway']
-		# print request.form['roundtrip']
-	
-		all_flights = Flight.query.filter_by(
-			origin = Airport.query.filter_by(code = origin).first().airport_id
-			).all()
-		print 'all_flights', all_flights
-
-		trip_type = request.form['trip-type']
-
-		flight= []
-		for item in all_flights:
-			if item.price < price:
-				if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
-					item.etd < datetime.combine(depart_date.date, datetime.time.max):
-						flights.append(item)
-
-		#build db + query pint
-		return render_template("results.html", 
-								origin=origin, 
-								depart_date=depart_date,
-								return_date=return_date,
-								price=price,
-								trip_type=trip_type)
-	else: # request.method == "GET"
-		return render_template("search.html")
-
-@app.route("/results")
-def results():
-	return render_template("results.html", flights = flights_dict)
-
-@app.errorhandler(404)
-def page_not_found(error):
-	return render_template("404.html"), 404
-
 #MODELS CODE ------------------------------------------------------
 class Airport(db.Model):
 	__tablename__ = 'airports'
@@ -111,6 +64,59 @@ class Feature(db.Model):
 		self.temp = temp
 		self.beer_price = beer_price
 		self.created_at = created_at 
+
+
+@app.route("/")
+def home():
+	return render_template("search.html")
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
+	if request.method == "POST":
+		origin = request.form['from']
+		depart_date = request.form['depart']
+		return_date = request.form['return']
+		price = request.form['price']
+
+		# print request.form['oneway']
+		# print request.form['roundtrip']
+		print 'origin: ', origin 
+		
+		origin_airport_id = Airport.query.filter_by(code = origin).first().airport_id
+		print 'origin_airport_id ', origin_airport_id
+
+		all_flights = Flight.query.filter_by(
+			origin = origin_airport_id
+			).all()
+		print 'all_flights', all_flights
+
+		trip_type = request.form['trip-type']
+
+		flight= []
+		for item in all_flights:
+			if item.price < price:
+				if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
+					item.etd < datetime.combine(depart_date.date, datetime.time.max):
+						flights.append(item)
+
+		#build db + query pint
+		return render_template("results.html", 
+								origin=origin, 
+								depart_date=depart_date,
+								return_date=return_date,
+								price=price,
+								trip_type=trip_type)
+	else: # request.method == "GET"
+		return render_template("search.html")
+
+@app.route("/results")
+def results():
+	return render_template("results.html", flights = flights_dict)
+
+@app.errorhandler(404)
+def page_not_found(error):
+	return render_template("404.html"), 404
+
 
 
 
