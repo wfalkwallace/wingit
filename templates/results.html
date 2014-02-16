@@ -29,52 +29,27 @@
   <div class="background"></div>     
 
   <div class="row">
-    <div class="col-md-3 col-md-offset-1">
-      <div class="panel">
+    <div class="col-md-2 col-md-offset-1">
+      <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Search for Flights:</h3>
+          <h3 class="panel-title">Searching for flights matching:</h3>
         </div>
         <div class="panel-body">
-          <form role="form" action="/search" METHOD="POST">
-            <div class="form-group">
-              <label class="sr-only" for="contact-name">Leaving From</label>
-              <input type="text" class="form-control" name="from" id="form-origin" placeholder="Leaving From" required>
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="contact-phone">Maximum Price</label>
-              <input type="text" class="form-control" name="price" id="form-price" placeholder="Max. Price (USD)">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="contact-email">Minimum Temperature</label>
-              <input type="text" class="form-control" name="mintemp" id="form-mintemp" placeholder="Min. Temperature (&#8457;)">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="contact-email">Maximum Temperature</label>
-              <input type="text" class="form-control" name="maxtemp" id="form-maxtemp" placeholder="Max. Temperature (&#8457;)">
-            </div>
-            <div class="form-group">
-            <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-primary">
-                  <input type="radio" name="oneway" id="option1"> One Way
-                </label>
-                <label class="btn btn-primary">
-                  <input type="radio" name="roundtrip" id="option2"> Roundtrip
-                </label>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="btn-group widen">
-                <button type="submit" class="btn btn-success widen">Submit</button>
-              </div>
-            </div>
-          </form>
+          <ul>
+            <li><strong>Leaving from:</strong> {{ origin }} </li>
+            <li><strong>Leaving on:</strong> {{ etd-depart }} </li>
+            <li><strong>Returning on:</strong> {{ etd-return }} </li>
+            <li><strong>Max. price:</strong> {{ price }} </li>
+            <li><strong>Ticket type: </strong> {{ type }} </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-9">
+
+    
 
     </div>
-
   </div>
 
 
