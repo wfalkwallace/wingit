@@ -110,14 +110,15 @@ def search():
 			if 'temperature' in r.keys():
 				r = r['temperature']
 			else:
-				r = "Try again"
+				r = "Could not find a temperature in "
+
 			flight_dict[item.arr_city] = {
 				"dep_city" : item.dep_city,
 				"arr_country" : item.arr_country,
 				# "departing_datetime" : item.depart,
 				# "departing_datetime" : item.arrive,
 				"price" : item.price,
-				#"beer_price" : "",
+				# "beer_price" : beer_price,
 				"temperature" : r
 			}
 			# print item.arr_city, item.arr_country
