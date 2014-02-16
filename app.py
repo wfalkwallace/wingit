@@ -4,6 +4,11 @@ app = Flask(__name__)
 app.debug = True
 app.config.from_object('config.flask_config')
 db = SQLAlchemy(app)
+
+#beer xml parsing setup
+import urllib
+from xml.etree import ElementTree as ET
+
 #from models import Flight, Airport, Feature
 
 #MODELS CODE ------------------------------------------------------
@@ -55,18 +60,18 @@ class Flight(db.Model):
 		arrival_city, arrival_country, arrival_latitude, arrival_longitude, depart, arrive, price):
 		#self.flight_id = air_id
 
-	self.dep_city = departing_city
-	self.dep_country = departing_country
-	self.dep_lat = departing_latitude
-	self.dep_long = departing_longitude
-	self.arr_city = arrival_city
-	self.arr_country = arrival_city
-	self.arr_lat = arrival_latitude
-	self.arr_long = arrival_longitude
-	self.depart = depart
-	self.arrive = arrive
-	self.price = price
-	self.created_at = datetime.datetime.now()
+		self.dep_city = departing_city
+		self.dep_country = departing_country
+		self.dep_lat = departing_latitude
+		self.dep_long = departing_longitude
+		self.arr_city = arrival_city
+		self.arr_country = arrival_city
+		self.arr_lat = arrival_latitude
+		self.arr_long = arrival_longitude
+		self.depart = depart
+		self.arrive = arrive
+		self.price = price
+		self.created_at = datetime.datetime.now()
 
 
 class Feature(db.Model):
@@ -78,12 +83,12 @@ class Feature(db.Model):
 	created_at = datetime.datetime.now()
 
 	def __init__(self, city, country, temperature, beer_price):
-		#self.feature_id = feature_id
-	self.city = city
-	self.country = country
-	self.temp = temperature
-	self.beer_price = beer_price
-	self.created_at = datetime.datetime.now()
+	#self.feature_id = feature_id
+		self.city = city
+		self.country = country
+		self.temp = temperature
+		self.beer_price = beer_price
+		self.created_at = datetime.datetime.now()
 
 
 @app.route("/")
@@ -93,36 +98,47 @@ def home():
 @app.route("/search", methods=["GET", "POST"])
 def search():
 	if request.method == "POST":
-		origin = request.form['from']
+		origin_city = request.form['from']
 		depart_date = request.form['depart']
 		return_date = request.form['return']
 		price = request.form['price']
+		trip_type = request.form['trip-type']
 
 		print 'origin: ', origin 
 
-		#origin_airport_id = Airport.query.filter_by(code = origin).first().airport_id
-
-		#print 'origin_airport_id ', origin_airport_id
-
-		all_airports = Airport.query.all()
-		for airport in all_airports:
-			print airport
-
-		all_airports = Airport.query.count()
-		print 'all_airport_count', all_airports
-		all_flights = Flight.query.filter_by(
-			origin = origin_airport_id
+		#get from origin
+		valid_flights_from_origin = Flight.query.filter_by(
+			dep_city = departing_city,
+			dep_country = departing_country
 			).all()
-		print 'all_flights', all_flights
+		print 'valid flights from origin', valid_flights_from_origin
 
-		trip_type = request.form['trip-type']
-
+		#flights with departure date, price, origin constricted.
 		flight= []
-		for item in all_flights:
+		for item in valid_flights_from_origin:
 			if item.price < price:
 				if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
-					item.etd < datetime.combine(depart_date.date, datetime.time.max):
+					item.depart < datetime.combine(depart_date.date, datetime.time.max):
 						flights.append(item)
+
+		#beer pricing addition
+		requestURL = 'http://www.pintprice.com/xml.php?country=' + item.country.lower().replace(' ', '_')
+		root = ET.parse(urllib.urlopen(requestURL)).getroot()
+		print root
+		items = root.findall('city')
+		print items
+		#fill dictionary
+		flight_dict = {}
+		for item in flight:
+			flight_dict[item.arr_city] = {
+				"dep_country" : item.dep_city,
+				"departing_datetime" : item.depart,
+				"departing_datetime" : item.arrive,
+				"price" : item.price
+				"beer_price" : "",
+				"temperature" : ""
+			}
+
 		
 
 
