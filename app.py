@@ -71,27 +71,23 @@ def home():
 def search():
 	if request.method == "POST":
 		origin_city = request.form['from']
-		depart_date = request.form['depart']
-		return_date = request.form['return']
+		# depart_date = request.form['depart']
+		# return_date = request.form['return']
 		price = request.form['price']
-		trip_type = request.form['trip-type']
 
-		print 'origin: ', origin 
+		# print 'origin: ', origin 
 
-		#get from origin
-		valid_flights_from_origin = Flight.query.filter_by(
-			dep_city = departing_city,
-			dep_country = departing_country
-			).all()
+		# get from origin
+		valid_flights_from_origin = Flight.query.filter_by(dep_city = origin_city,
+															dep_country = "USA").all()
+		# valid_flights_from_origin = Flight.query.all()
 		print 'valid flights from origin', valid_flights_from_origin
 
 		#flights with departure date, price, origin constricted.
 		flight= []
 		for item in valid_flights_from_origin:
-			if item.price < price:
-				if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
-					item.depart < datetime.combine(depart_date.date, datetime.time.max):
-						flights.append(item)
+			if int(item.price) < int(price):
+				flight.append(item)
 
 		# #beer pricing addition
 		# requestURL = 'http://www.pintprice.com/xml.php?country=' + item.country.lower().replace(' ', '_')
@@ -104,22 +100,23 @@ def search():
 		for item in flight:
 			flight_dict[item.arr_city] = {
 				"dep_country" : item.dep_city,
-				"departing_datetime" : item.depart,
-				"departing_datetime" : item.arrive,
+				# "departing_datetime" : item.depart,
+				# "departing_datetime" : item.arrive,
 				"price" : item.price
 				#"beer_price" : "",
 				#"temperature" : ""
 			}
+			print item.arr_city
 
 		
 
-
 		#build db + query pint
 		return render_template("results.html", 
-								origin=origin, 
-								depart_date=depart_date,
-								return_date=return_date,
-								price=price)
+								origin=origin_city, 
+								# depart_date=depart_date,
+								# return_date=return_date,
+								max_price=price,
+								flight_dict=flight_dict)
 	else: # request.method == "GET"
 		return render_template("search.html")
 
@@ -129,7 +126,7 @@ def results():
 
 @app.errorhandler(404)
 def page_not_found(error):
-	return render_template("404.html"), 404
+	return render_template("search.html"), 404
 
 
 
