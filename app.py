@@ -101,15 +101,15 @@ def search():
 
 		flight_dict = {}
 		for item in flight:
-			r = requests.get('https://thepulseapi.earthnetworks.com/data/observations/v1/current?location='+item.arr_lat+','+item.arr_long+'&locationtype=latitudelongitude&units=english&cultureinfo=en-en&verbose=true&access_token=SU6OGOpKSMDeD9B3DtqQvEF3ynsI')
-
+			r = requests.get('https://thepulseapi.earthnetworks.com/data/observations/v1/current?location='+str(item.arr_lat)+','+str(item.arr_long)+'&locationtype=latitudelongitude&units=english&cultureinfo=en-en&verbose=true&access_token=SU6OGOpKSMDeD9B3DtqQvEF3ynsI').json()['temperature']
+			print 'request: ', r
 			flight_dict[item.arr_city] = {
 				"dep_country" : item.dep_city,
 				# "departing_datetime" : item.depart,
 				# "departing_datetime" : item.arrive,
-				"price" : item.price
+				"price" : item.price,
 				#"beer_price" : "",
-				#"temperature" : ""
+				"temperature" : r
 			}
 			print item.arr_city
 
@@ -133,9 +133,9 @@ def results():
 def contact():
 	return render_template("contact.html")
 
-@app.route("/contact/mail")
-def mail():
-	https://api.sendgrid.com/api/mail.send.json
+# @app.route("/contact/mail")
+# def mail():
+# 	#https://api.sendgrid.com/api/mail.send.json
 
 @app.errorhandler(404)
 def page_not_found(error):
