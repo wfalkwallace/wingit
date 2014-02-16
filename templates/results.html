@@ -35,10 +35,48 @@
           <h3 class="panel-title">Searching for flights matching:</h3>
         </div>
         <div class="panel-body">
+        <form role="form" action="/search" METHOD="POST">
+          <div class="form-group">
+            <label class="sr-only" for="form-origin">Leaving from</label>
+            <input type="text" class="form-control" name="from" id="form-origin" placeholder="Leaving From" value="{{ origin }}"required>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="form-departing">Leaving on</label>
+            <input type="text" class="form-control" name="depart" id="form-departing" placeholder="Leaving on"  value="{{ etd_depart }}">
+          </div>
+          <div id="returning-input" class="form-group">
+            <label class="sr-only" for="form-returning">Returning on</label>
+            <input type="text" class="form-control" name="return" id="form-returning" placeholder="Returning on" value="{{ etd_return }}">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="form-price">Maximum Price</label>
+            <input type="text" class="form-control" name="price" id="form-price" placeholder="Max. Price (USD)" value="{{ price }}">
+          </div>
+          <div class="form-group">
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+              <label class="btn btn-primary">
+              {% if name == correspondent_name %}<span class="text-muted small">{{ timestamp }} - </span>{% endif %}
+                <input type="radio" name="trip-type" id="one-way-toggle" value="oneway"> One Way
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="trip-type" id="roundtrip" value="roundtrip"> Roundtrip
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="btn-group widen">
+              <button type="submit" class="btn btn-success widen">Submit</button>
+            </div>
+          </div>
+        </form>
+
+
+
+
           <ul>
             <li><strong>Leaving from:</strong> {{ origin }} </li>
-            <li><strong>Leaving on:</strong> {{ etd-depart }} </li>
-            <li><strong>Returning on:</strong> {{ etd-return }} </li>
+            <li><strong>Leaving on:</strong> {{ etd_depart }} </li>
+            <li><strong>Returning on:</strong> {{ etd_return }} </li>
             <li><strong>Max. price:</strong> {{ price }} </li>
             <li><strong>Ticket type: </strong> {{ type }} </li>
           </ul>

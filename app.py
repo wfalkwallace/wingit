@@ -7,15 +7,22 @@ app.debug = True
 def home():
 	return render_template("search.html")
 
-@app.route("/search", methods=["POST"])
+@app.route("/search", methods=["GET", "POST"])
 def search():
 	if request.method == "POST":
 		origin = request.form['from']
 		depart_date = request.form['depart']
-		# return_date = request.form['return']
+		return_date = request.form['return']
 		price = request.form['price']
-		print request.form['oneway']
-		print request.form['roundtrip']
+		trip_type = request.form['trip-type']
+
+		print origin
+		print depart_date
+		print price
+		print trip_type
+
+		# print request.form['oneway']
+		# print request.form['roundtrip']
 
 	#db get by above; put into vars in dict as price, dest, ....
 	#
