@@ -31,7 +31,7 @@ class Airport(db.Model):
 			self.airport_id,
 			self.code,
 			self.city,
-			selfc.country
+			self.country
 		)
 
 class Flight(db.Model):
@@ -86,11 +86,12 @@ def search():
 		depart_date = request.form['depart']
 		return_date = request.form['return']
 		price = request.form['price']
+		# trip_type = request.form['trip-type']
 
 		# print request.form['oneway']
 		# print request.form['roundtrip']
 		print 'origin: ', origin 
-		
+
 		#origin_airport_id = Airport.query.filter_by(code = origin).first().airport_id
 
 		#print 'origin_airport_id ', origin_airport_id
@@ -99,6 +100,8 @@ def search():
 		for airport in all_airports:
 			print airport
 
+		all_airports = Airport.query.count()
+		print 'all_airport_count', all_airports
 		# all_flights = Flight.query.filter_by(
 		# 	origin = origin_airport_id
 		# 	).all()
@@ -118,8 +121,8 @@ def search():
 								origin=origin, 
 								depart_date=depart_date,
 								return_date=return_date,
-								price=price,
-								trip_type=trip_type)
+								price=price)
+								# trip_type=trip_type)
 	else: # request.method == "GET"
 		return render_template("search.html")
 
