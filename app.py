@@ -10,19 +10,18 @@ def home():
 @app.route("/search", methods=["POST"])
 def search():
 	if request.method == "POST":
-		origin = request.form['message'] #this will be airport code?
-		depart_date = request.form['message'] 
-		return_date = request.form['message']
-		price = request.form['message']
-
-	all_flights = models.Flight(db).query.filter_by(
+		origin = request.form['from']
+		depart_date = request.form['depart']
+		# return_date = request.form['return']
+		price = request.form['price']
+		print request.form['oneway']
+		print request.form['roundtrip']
+	
+		all_flights = models.Flight(db).query.filter_by(
 			origin = models.Airport(db_name).query.filter_by(code = origin_code).first().airport_id,
 			dest = Airport(db_name).query.filter_by(code = dest_code).first().airport_id,
 			#eta = 
 			).all()
-
-	#get all obj. from db w/ these attributes.
-
 
 	#db get by above; put into vars in dict as price, dest, ....
 	#
@@ -40,7 +39,7 @@ def search():
 
 
 
-		return render_template("results.html", signup_email=request.form["register_email"])
+		return render_template("results.html")
 	else: # request.method == "GET"
 		return render_template("search.html")
 
