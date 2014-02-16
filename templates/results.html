@@ -59,7 +59,7 @@
       <div class="list-group">
       <div class="list-group">
         {% for arr_city, trip_dict in flight_dict.iteritems() %}
-          <h4 class="list-group-item-heading">{{ arr_city }} | $ {{ trip_dict["price"] }}</h4>
+          <h4 class="list-group-item-heading">{{ arr_city }} | $ {{ trip_dict["price"] }} | {{ trip_dict["temperature"] }}&#8457;</h4>
         {% endfor %}
       </div>
       </div>

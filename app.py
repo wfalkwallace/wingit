@@ -153,9 +153,9 @@ def mail():
 		msg['from'] = "support@wingitwith.us"
 		response = requests.post(url, msg)
 
-		return render_template("search.html")
+		return redirect("/")
 	else:
-		return render_template("search.html")
+		return redirect("/")
 
 
 @app.errorhandler(404)
