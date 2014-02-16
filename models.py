@@ -5,10 +5,10 @@ Models for SQL classes
 
 import datetime
 
-class Airport(db_name):
+class Airport(db_name.Model):
 	__tablename__ = 'airports'
 
-	airport_id = db_name.Column(db_name.Integer, primary_key = True))
+	airport_id = db_name.Column(db_name.Integer, primary_key = True)
 	code = db_name.Column(db_name.String(3), unique = True)
 	#name = db_name.Column(db_name.String(64))
 	city = name = db_name.Column(db_name.String(64))
@@ -23,7 +23,7 @@ class Airport(db_name):
 		self.country = country
 		self.created_at = datetime.datetime.now()
 
-class Flight(db_name)
+class Flight(db_name.Model):
 	__tablename__ = 'flights'
 	flight_id = db_name.Column(db_name.Integer, primary_key = True)
 	etd = db_name.Column(db_name.DateTime)
@@ -46,7 +46,7 @@ class Flight(db_name)
 		self.create_at = datetime.datetime.now()
 
 
-class Feature(db_name):
+class Feature(db_name.Model):
 	__tablename__ = 'features'
 	feature_id = db_name.Column(db_name.Integer, primary_key = True)
 	temp = db_name.Column(db_name.Integer)

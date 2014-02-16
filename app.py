@@ -1,7 +1,9 @@
 from flask import Flask, jsonify, render_template, request, session, redirect, flash
-
 app = Flask(__name__)
 app.debug = True
+app.config.from_object('config.flask_config')
+db = SQLAlchemy(app)
+from models import Flight, Airport, Feature
 
 @app.route("/")
 def home():
@@ -14,31 +16,35 @@ def search():
 		depart_date = request.form['depart']
 		# return_date = request.form['return']
 		price = request.form['price']
-		print request.form['oneway']
-		print request.form['roundtrip']
+		# print request.form['oneway']
+		# print request.form['roundtrip']
 	
-		all_flights = models.Flight(db).query.filter_by(
-			origin = models.Airport(db_name).query.filter_by(code = origin_code).first().airport_id,
-			dest = Airport(db_name).query.filter_by(code = dest_code).first().airport_id,
-			#eta = 
+		all_flights = Flight(db).query.filter_by(
+			origin = Airport(db).query.filter_by(code = origin).first().airport_id
 			).all()
 
-	#db get by above; put into vars in dict as price, dest, ....
-	#
-	#api.get by above put into 
-	# for api call
-	# price =  resp.price 
-	# dict["price" = price]
-	#model for flights_dict:
-	#list: 
-	#item: {origin: JFK, dest:LHR, price:500, beer:1.62, },
-	#build flights_dict here
-	##add weather info to flights_dict
-	#add beer info to flights_dict
+		flight= []
+		for item in all_flights:
+			if item.price < price:
+				if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
+					item.etd < datetime.combine(depart_date.date, datetime.time.max):
+						flights.append(item)
 
 
+		#build db + query pint
 
-
+		#db get by above; put into vars in dict as price, dest, ....
+		#
+		#api.get by above put into 
+		# for api call
+		# price =  resp.price 
+		# dict["price" = price]
+		#model for flights_dict:
+		#list: 
+		#item: {origin: JFK, dest:LHR, price:500, beer:1.62, },
+		#build flights_dict here
+		##add weather info to flights_dict
+		#add beer info to flights_dict
 		return render_template("results.html")
 	else: # request.method == "GET"
 		return render_template("search.html")
