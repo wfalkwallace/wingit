@@ -12,33 +12,6 @@ from xml.etree import ElementTree as ET
 #from models import Flight, Airport, Feature
 
 #MODELS CODE ------------------------------------------------------
-# class Airport(db.Model):
-# 	__tablename__ = 'airports'
-
-# 	airport_id = db.Column(db.Integer, primary_key = True)
-# 	code = db.Column(db.String(3), unique = True)
-# 	#name = db.Column(db.String(64))
-# 	city = db.Column(db.String(64))
-# 	country = db.Column(db.String(64))
-# 	created_at = db.Column(db.DateTime)
-
-# 	def __init__(self, code, city, country):
-# 		#self.airport_id = air_id
-# 		self.code = code
-# 		#self.name = name
-# 		self.city = city
-# 		self.country = country
-# 		self.created_at = datetime.datetime.now()
-
-# 	def __repr__(self):
-# 		return "<Airport id = '%s', code = '%s', city = '%s', country = '%s'  >" % \
-# 		(
-# 			self.airport_id,
-# 			self.code,
-# 			self.city,
-# 			self.country
-# 		)
-
 class Flight(db.Model):
 	__tablename__ = 'flights'
 	
