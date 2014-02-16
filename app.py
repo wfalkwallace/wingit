@@ -16,31 +16,14 @@ def search():
 		price = request.form['price']
 		trip_type = request.form['trip-type']
 
-		print origin
-		print depart_date
-		print price
-		print trip_type
-
-		# print request.form['oneway']
-		# print request.form['roundtrip']
-
-	#db get by above; put into vars in dict as price, dest, ....
-	#
-	#api.get by above put into 
-	# for api call
-	# price =  resp.price 
-	# dict["price" = price]
-	#model for flights_dict:
-	#list: 
-	#item: {origin: JFK, dest:LHR, price:500, beer:1.62, },
-	#build flights_dict here
-	##add weather info to flights_dict
-	#add beer info to flights_dict
 
 
-
-
-		return render_template("results.html")
+		return render_template("results.html", 
+								origin=origin, 
+								depart_date=depart_date,
+								return_date=return_date,
+								price=price,
+								trip_type=trip_type)
 	else: # request.method == "GET"
 		return render_template("search.html")
 
