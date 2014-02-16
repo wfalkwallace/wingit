@@ -119,7 +119,8 @@ def search():
 								origin=origin_city, 
 								depart_date=depart_date,
 								return_date=return_date,
-								price=price)
+								price=price,
+								flight_dict=flight_dict)
 	else: # request.method == "GET"
 		return render_template("search.html")
 
