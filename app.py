@@ -21,8 +21,8 @@ def search():
 		# print request.form['oneway']
 		# print request.form['roundtrip']
 	
-		all_flights = Flight(db).query.filter_by(
-			origin = Airport(db).query.filter_by(code = origin).first().airport_id
+		all_flights = Flight.query.filter_by(
+			origin = Airport.query.filter_by(code = origin).first().airport_id
 			).all()
 
 		trip_type = request.form['trip-type']
@@ -52,7 +52,7 @@ def results():
 def page_not_found(error):
 	return render_template("404.html"), 404
 
-#MODELS CODE
+#MODELS CODE ------------------------------------------------------
 class Airport(db.Model):
 	__tablename__ = 'airports'
 
@@ -73,6 +73,7 @@ class Airport(db.Model):
 
 class Flight(db.Model):
 	__tablename__ = 'flights'
+	
 	flight_id = db.Column(db.Integer, primary_key = True)
 	etd = db.Column(db.DateTime)
 	eta = db.Column(db.DateTime)
@@ -83,11 +84,11 @@ class Flight(db.Model):
 	origin = db.Column(db.Integer, db.ForeignKey('airports.airport_id'))
 	dest = db.Column(db.Integer, db.ForeignKey('airports.airport_id'))
 
-	def __init__(self, code, etd, eta, price):
+	def __init__(self, codez, etd, eta, price):
 		#self.flight_id = air_id
 
-		self.origin = Airport(db).query.filter_by(code = code).first().airport_id
-		self.dest = Airport(db).query.filter_by(code = code).first().airport_id
+		self.origin = Airport.query.filter_by(code = codez).first().airport_id
+		self.dest = Airport.query.filter_by(code = codez).first().airport_id
 		self.etd = etd
 		self.eta = eta
 		self.price = price
