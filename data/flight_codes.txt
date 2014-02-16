@@ -1,3 +1,4 @@
+Aberdeen, SD;United States of America;ABR
 Abilene, TX;United States of America;ABI
 Adak Island, AK;United States of America;ADK
 Akiachak, AK;United States of America;KKI
