@@ -9,19 +9,22 @@ from models import Flight, Airport, Feature
 def home():
 	return render_template("search.html")
 
-@app.route("/search", methods=["POST"])
+@app.route("/search", methods=["GET", "POST"])
 def search():
 	if request.method == "POST":
 		origin = request.form['from']
 		depart_date = request.form['depart']
-		# return_date = request.form['return']
+		return_date = request.form['return']
 		price = request.form['price']
+
 		# print request.form['oneway']
 		# print request.form['roundtrip']
 	
 		all_flights = Flight(db).query.filter_by(
 			origin = Airport(db).query.filter_by(code = origin).first().airport_id
 			).all()
+
+		trip_type = request.form['trip-type']
 
 		flight= []
 		for item in all_flights:
@@ -30,22 +33,13 @@ def search():
 					item.etd < datetime.combine(depart_date.date, datetime.time.max):
 						flights.append(item)
 
-
 		#build db + query pint
-
-		#db get by above; put into vars in dict as price, dest, ....
-		#
-		#api.get by above put into 
-		# for api call
-		# price =  resp.price 
-		# dict["price" = price]
-		#model for flights_dict:
-		#list: 
-		#item: {origin: JFK, dest:LHR, price:500, beer:1.62, },
-		#build flights_dict here
-		##add weather info to flights_dict
-		#add beer info to flights_dict
-		return render_template("results.html")
+		return render_template("results.html", 
+								origin=origin, 
+								depart_date=depart_date,
+								return_date=return_date,
+								price=price,
+								trip_type=trip_type)
 	else: # request.method == "GET"
 		return render_template("search.html")
 
