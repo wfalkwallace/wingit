@@ -96,8 +96,12 @@ def search():
 		# items = root.findall('city')
 		# print items
 		#fill dictionary
+
+
 		flight_dict = {}
 		for item in flight:
+			r = requests.get('https://thepulseapi.earthnetworks.com/data/observations/v1/current?location='+item.arr_lat+','+item.arr_long+'&locationtype=latitudelongitude&units=english&cultureinfo=en-en&verbose=true&access_token=SU6OGOpKSMDeD9B3DtqQvEF3ynsI')
+
 			flight_dict[item.arr_city] = {
 				"dep_country" : item.dep_city,
 				# "departing_datetime" : item.depart,
