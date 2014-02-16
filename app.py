@@ -1,13 +1,14 @@
 from flask import Flask, jsonify, render_template, request, session, redirect, flash
 from flask.ext.sqlalchemy import SQLAlchemy
+import datetime
 app = Flask(__name__)
 app.debug = True
 app.config.from_object('config.flask_config')
 db = SQLAlchemy(app)
 
 #beer xml parsing setup
-import urllib
-from xml.etree import ElementTree as ET
+# import urllib
+# from xml.etree import ElementTree as ET
 
 #from models import Flight, Airport, Feature
 
@@ -32,7 +33,6 @@ class Flight(db.Model):
 	def __init__(self, departing_city, departing_country, departing_latitude, departing_longitude,
 		arrival_city, arrival_country, arrival_latitude, arrival_longitude, depart, arrive, price):
 		#self.flight_id = air_id
-
 		self.dep_city = departing_city
 		self.dep_country = departing_country
 		self.dep_lat = departing_latitude
@@ -46,9 +46,9 @@ class Flight(db.Model):
 		self.price = price
 		self.created_at = datetime.datetime.now()
 
-
 class Feature(db.Model):
 	__tablename__ = 'features'
+	feature_id = db.Column(db.Integer, primary_key = True)
 	city = db.Column(db.String(64))
 	country = db.Column(db.String(64))
 	temp = db.Column(db.Integer)
@@ -56,7 +56,6 @@ class Feature(db.Model):
 	created_at = datetime.datetime.now()
 
 	def __init__(self, city, country, temperature, beer_price):
-	#self.feature_id = feature_id
 		self.city = city
 		self.country = country
 		self.temp = temperature
@@ -94,12 +93,12 @@ def search():
 					item.depart < datetime.combine(depart_date.date, datetime.time.max):
 						flights.append(item)
 
-		#beer pricing addition
-		requestURL = 'http://www.pintprice.com/xml.php?country=' + item.country.lower().replace(' ', '_')
-		root = ET.parse(urllib.urlopen(requestURL)).getroot()
-		print root
-		items = root.findall('city')
-		print items
+		# #beer pricing addition
+		# requestURL = 'http://www.pintprice.com/xml.php?country=' + item.country.lower().replace(' ', '_')
+		# root = ET.parse(urllib.urlopen(requestURL)).getroot()
+		# print root
+		# items = root.findall('city')
+		# print items
 		#fill dictionary
 		flight_dict = {}
 		for item in flight:
@@ -108,8 +107,8 @@ def search():
 				"departing_datetime" : item.depart,
 				"departing_datetime" : item.arrive,
 				"price" : item.price
-				"beer_price" : "",
-				"temperature" : ""
+				#"beer_price" : "",
+				#"temperature" : ""
 			}
 
 		
