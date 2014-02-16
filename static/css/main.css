@@ -20,7 +20,7 @@
 	filter: blur(3px);
 }
 
-#results-pane{
+.shorten{
 	height:75%;
 	overflow-y: auto;
 }
