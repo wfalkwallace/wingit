@@ -54,57 +54,56 @@
             </div>
             <div class="form-group">
               <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-primary">
-                  {% if trip_type == "oneway" %}
-                  <input type="radio" class="active" name="trip-type" id="one-way-toggle" value="oneway"> One Way
-                  {% endif %}
+                {% if trip_type == "oneway" %}
+                <label class="btn btn-primary active">
                   {% if trip_type != "oneway" %}
-                  <input type="radio" name="trip-type" id="one-way-toggle" value="oneway"> One Way
-                  {% endif %}
-                </label>
-                {% if trip_type != "oneway" %}
-                <label class="btn btn-primary">
-                  <input type="radio" class="active" name="trip-type" id="roundtrip" value="roundtrip"> Roundtrip
-                  {% endif %}
-                  {% if trip_type == "oneway" %}
-                  <input type="radio" name="trip-type" id="roundtrip" value="roundtrip"> Roundtrip
-                  {% endif %}
-                </label>
+                  <label class="btn btn-primary">
+                    {% endif %}
+                    <input type="radio" class="active" name="trip-type" id="one-way-toggle" value="oneway"> One Way
+                  </label>
+                  {% if trip_type != "oneway" %}
+                  <label class="btn btn-primary active">
+                    {% endif %}
+                    {% if trip_type == "oneway" %}
+                    <label class="btn btn-primary">
+                    {% endif %}
+                    <input type="radio" class="active" name="trip-type" id="roundtrip" value="roundtrip"> Roundtrip
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="btn-group widen">
-                <button type="submit" class="btn btn-success widen">Submit</button>
+              <div class="form-group">
+                <div class="btn-group widen">
+                  <button type="submit" class="btn btn-success widen">Submit</button>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
+      <div class="col-md-9">
+
+
+
+      </div>
     </div>
-    <div class="col-md-9">
 
 
 
-    </div>
-  </div>
+    <footer class="text-center">
+      <p>&copy; Wing It 2014 | <a id="footer-link" href="/contact">Contact Us</a></p>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
+    <script src="/static/js/vendor/bootstrap.min.js"></script>
 
+    <script src="/static/js/main.js"></script>
 
-  <footer class="text-center">
-    <p>&copy; Wing It 2014 | <a id="footer-link" href="/contact">Contact Us</a></p>
-  </footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/static/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
-  <script src="/static/js/vendor/bootstrap.min.js"></script>
-
-  <script src="/static/js/main.js"></script>
-
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src='//www.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-</body>
-</html>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+  </html>
