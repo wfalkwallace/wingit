@@ -24,6 +24,7 @@ def search():
 		all_flights = Flight.query.filter_by(
 			origin = Airport.query.filter_by(code = origin).first().airport_id
 			).all()
+		print 'all_flights', all_flights
 
 		trip_type = request.form['trip-type']
 

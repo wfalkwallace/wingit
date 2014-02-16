@@ -23,7 +23,6 @@ for line in txt_file:
 
 	# Prepare SQL query to INSERT a record into the database.
 	#parse text file
-	if 
 	sql = "INSERT INTO airports(code, city, country, created_at) VALUES ('%s', '%s', '%s', '%s')" % \
 		( line_arr[2], line_arr[0], line_arr[1], str(datetime.datetime.now()) )
 	
