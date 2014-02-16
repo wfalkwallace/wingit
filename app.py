@@ -97,10 +97,7 @@ def search():
 		depart_date = request.form['depart']
 		return_date = request.form['return']
 		price = request.form['price']
-		# trip_type = request.form['trip-type']
 
-		# print request.form['oneway']
-		# print request.form['roundtrip']
 		print 'origin: ', origin 
 
 		#origin_airport_id = Airport.query.filter_by(code = origin).first().airport_id
@@ -135,7 +132,6 @@ def search():
 								depart_date=depart_date,
 								return_date=return_date,
 								price=price)
-								# trip_type=trip_type)
 	else: # request.method == "GET"
 		return render_template("search.html")
 
