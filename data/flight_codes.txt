@@ -3226,7 +3226,7 @@ Tallinn;Estonia;TLL
 Tamanrasset;Algeria;TMR
 Tamarindo;Costa Rica;TNO
 Tamatave;Madagascar;TMM
-Tambohorano;MadagascarWTA
+Tambohorano;Madagascar;WTA
 Tambolaka;Indonesia;TMC
 Tambor;Costa Rica;TMU
 Tampere;Finland;TMP

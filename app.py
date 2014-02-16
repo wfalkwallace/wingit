@@ -10,7 +10,14 @@ def home():
 @app.route("/search", methods=["POST"])
 def search():
 	if request.method == "POST":
-		print 'signup-post'
+		origin = request.form['message']
+		depart_date = request.form['message']
+		return_date = request.form['message']
+		price = request.form['message']
+
+
+
+
 		return render_template("signup.html", signup_email=request.form["register_email"])
 	else: # request.method == "GET"
 		return render_template("search.html")

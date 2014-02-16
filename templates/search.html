@@ -37,19 +37,19 @@
         <div class="panel-body">
           <form role="form" action="/search" METHOD="POST">
             <div class="form-group">
-              <label class="sr-only" for="contact-name">Leaving from</label>
+              <label class="sr-only" for="form-origin">Leaving from</label>
               <input type="text" class="form-control" name="from" id="form-origin" placeholder="Leaving From" required>
             </div>
             <div class="form-group">
-              <label class="sr-only" for="contact-email">Leaving on</label>
-              <input type="datetime" class="form-control" name="etd-depart" id="form-departing" placeholder="Leaving on">
+              <label class="sr-only" for="form-departing">Leaving on</label>
+              <input type="datetime" class="form-control" name="depart_date" id="form-departing" placeholder="Leaving on">
             </div>
             <div id="returning-input" class="form-group">
-              <label class="sr-only" for="contact-email">Returning on</label>
-              <input type="datetime" class="form-control" name="etd-return" id="form-returning" placeholder="Returning on">
+              <label class="sr-only" for="form-returning">Returning on</label>
+              <input type="datetime" class="form-control" name="return_date" id="form-returning" placeholder="Returning on">
             </div>
             <div class="form-group">
-              <label class="sr-only" for="contact-phone">Maximum Price</label>
+              <label class="sr-only" for="form-price">Maximum Price</label>
               <input type="text" class="form-control" name="price" id="form-price" placeholder="Max. Price (USD)">
             </div>
             <div class="form-group">
