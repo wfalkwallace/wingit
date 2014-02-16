@@ -129,9 +129,31 @@ def results():
 def contact():
 	return render_template("contact.html")
 
-@app.route("/contact/mail")
+@app.route("/contact/mail", methods=["GET", "POST"])
 def mail():
-	https://api.sendgrid.com/api/mail.send.json
+	if request.method == "POST":
+
+		url = "https://api.sendgrid.com/api/mail.send.json"
+		msg = {}
+
+		subject=Example_Subject&text=testingtextbody&from=info@domain.com
+
+		msg['api_user'] = "wfalkwallace"
+		msg['api_key'] = "wingit"
+		msg['to'] = "wfalkwallace@gmail.com"
+		msg['subject'] = "WING IT CONTACT"
+		msg['text'] = "name: " + request.form['name'] + \
+					"\nphone: " + request.form['phone'] + \
+					"\nemail: " + request.form['email'] + \
+					"\ncomments: " + request.form['comments']
+
+		msg['from'] = "support@wingitwith.us"
+		response = requests.post(url, msg)
+
+		return render_template("search.html")
+	else:
+		return render_template("search.html")
+
 
 @app.errorhandler(404)
 def page_not_found(error):
