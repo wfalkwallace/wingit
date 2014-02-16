@@ -20,6 +20,11 @@
 	filter: blur(3px);
 }
 
+#results-pane{
+	height:75%;
+	overflow-y: auto;
+}
+
 html, 
 body {
 	height: 100%;
