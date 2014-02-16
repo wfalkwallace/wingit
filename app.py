@@ -7,72 +7,83 @@ db = SQLAlchemy(app)
 #from models import Flight, Airport, Feature
 
 #MODELS CODE ------------------------------------------------------
-class Airport(db.Model):
-	__tablename__ = 'airports'
+# class Airport(db.Model):
+# 	__tablename__ = 'airports'
 
-	airport_id = db.Column(db.Integer, primary_key = True)
-	code = db.Column(db.String(3), unique = True)
-	#name = db.Column(db.String(64))
-	city = db.Column(db.String(64))
-	country = db.Column(db.String(64))
-	created_at = db.Column(db.DateTime)
+# 	airport_id = db.Column(db.Integer, primary_key = True)
+# 	code = db.Column(db.String(3), unique = True)
+# 	#name = db.Column(db.String(64))
+# 	city = db.Column(db.String(64))
+# 	country = db.Column(db.String(64))
+# 	created_at = db.Column(db.DateTime)
 
-	def __init__(self, code, city, country):
-		#self.airport_id = air_id
-		self.code = code
-		#self.name = name
-		self.city = city
-		self.country = country
-		self.created_at = datetime.datetime.now()
+# 	def __init__(self, code, city, country):
+# 		#self.airport_id = air_id
+# 		self.code = code
+# 		#self.name = name
+# 		self.city = city
+# 		self.country = country
+# 		self.created_at = datetime.datetime.now()
 
-	def __repr__(self):
-		return "<Airport id = '%s', code = '%s', city = '%s', country = '%s'  >" % \
-		(
-			self.airport_id,
-			self.code,
-			self.city,
-			self.country
-		)
+# 	def __repr__(self):
+# 		return "<Airport id = '%s', code = '%s', city = '%s', country = '%s'  >" % \
+# 		(
+# 			self.airport_id,
+# 			self.code,
+# 			self.city,
+# 			self.country
+# 		)
 
 class Flight(db.Model):
 	__tablename__ = 'flights'
 	
 	flight_id = db.Column(db.Integer, primary_key = True)
-	etd = db.Column(db.DateTime)
-	eta = db.Column(db.DateTime)
+	dep_city = db.Column(db.String(64))
+	dep_country = db.Column(db.String(64))
+	dep_lat = db.Column(db.Float)
+	dep_long = db.Column(db.Float)
+	arr_city = db.Column(db.String(64))
+	arr_country = db.Column(db.String(64))
+	arr_lat = db.Column(db.Float)
+	arr_long = db.Column(db.Float)
+	depart = db.Column(db.DateTime)
+	arrive = db.Column(db.DateTime)
 	price = db.Column(db.Float)
 	created_at = db.Column(db.DateTime)
 
-	#foreign key
-	origin = db.Column(db.Integer, db.ForeignKey('airports.airport_id'))
-	dest = db.Column(db.Integer, db.ForeignKey('airports.airport_id'))
-
-	def __init__(self, codez, etd, eta, price):
+	def __init__(self, departing_city, departing_country, departing_latitude, departing_longitude,
+		arrival_city, arrival_country, arrival_latitude, arrival_longitude, depart, arrive, price):
 		#self.flight_id = air_id
 
-		self.origin = Airport.query.filter_by(code = codez).first().airport_id
-		self.dest = Airport.query.filter_by(code = codez).first().airport_id
-		self.etd = etd
-		self.eta = eta
-		self.price = price
-		self.create_at = datetime.datetime.now()
+	self.dep_city = departing_city
+	self.dep_country = departing_country
+	self.dep_lat = departing_latitude
+	self.dep_long = departing_longitude
+	self.arr_city = arrival_city
+	self.arr_country = arrival_city
+	self.arr_lat = arrival_latitude
+	self.arr_long = arrival_longitude
+	self.depart = depart
+	self.arrive = arrive
+	self.price = price
+	self.created_at = datetime.datetime.now()
 
 
 class Feature(db.Model):
 	__tablename__ = 'features'
-	feature_id = db.Column(db.Integer, primary_key = True)
+	city = db.Column(db.String(64))
+	country = db.Column(db.String(64))
 	temp = db.Column(db.Integer)
 	beer_price = db.Column(db.Float)
-	created_at = db.Column(db.DateTime)
+	created_at = datetime.datetime.now()
 
-	#foreign key
-	place = db.Column(db.Integer, db.ForeignKey('airports.airport_id'))
-
-	def __init__(self, temp, beer_price, created_at):
+	def __init__(self, city, country, temperature, beer_price):
 		#self.feature_id = feature_id
-		self.temp = temp
-		self.beer_price = beer_price
-		self.created_at = created_at 
+	self.city = city
+	self.country = country
+	self.temp = temperature
+	self.beer_price = beer_price
+	self.created_at = datetime.datetime.now()
 
 
 @app.route("/")
@@ -99,19 +110,21 @@ def search():
 
 		all_airports = Airport.query.count()
 		print 'all_airport_count', all_airports
-		# all_flights = Flight.query.filter_by(
-		# 	origin = origin_airport_id
-		# 	).all()
-		# print 'all_flights', all_flights
+		all_flights = Flight.query.filter_by(
+			origin = origin_airport_id
+			).all()
+		print 'all_flights', all_flights
 
-		# trip_type = request.form['trip-type']
+		trip_type = request.form['trip-type']
 
-		# flight= []
-		# for item in all_flights:
-		# 	if item.price < price:
-		# 		if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
-		# 			item.etd < datetime.combine(depart_date.date, datetime.time.max):
-		# 				flights.append(item)
+		flight= []
+		for item in all_flights:
+			if item.price < price:
+				if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
+					item.etd < datetime.combine(depart_date.date, datetime.time.max):
+						flights.append(item)
+		
+
 
 		#build db + query pint
 		return render_template("results.html", 
