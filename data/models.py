@@ -32,11 +32,14 @@ class Flight(db_name)
 	created_at = db_name.Column(db_name.DateTime)
 
 	#foreign key
-	origin = db.Column(db.Integer, db_name.ForeignKey('airports.airport_id'))
-	dest = db.Column(db.Integer, db_name.ForeignKey('airports.airport_id'))
+	origin = db_name.Column(db.Integer, db_name.ForeignKey('airports.airport_id'))
+	dest = db_name.Column(db.Integer, db_name.ForeignKey('airports.airport_id'))
 
-	def __init__(self, etd, eta, price):
+	def __init__(self, code, etd, eta, price):
 		#self.flight_id = air_id
+
+		self.origin = Airport(db_name).query.filter_by(code = code).first().airport_id
+		self.dest = Airport(db_name).query.filter_by(code = code).first().airport_id
 		self.etd = etd
 		self.eta = eta
 		self.price = price

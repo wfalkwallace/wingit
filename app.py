@@ -16,6 +16,12 @@ def search():
 		price = request.form['price']
 		trip_type = request.form['trip-type']
 
+		all_flights = models.Flight(db).query.filter_by(
+			origin = models.Airport(db_name).query.filter_by(code = origin_code).first().airport_id,
+			dest = Airport(db_name).query.filter_by(code = dest_code).first().airport_id,
+			#eta = 
+			).all()
+
 
 
 		return render_template("results.html", 
