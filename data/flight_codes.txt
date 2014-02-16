@@ -1,4 +1,3 @@
-Aberdeen, SD;United States of America;ABR 
 Abilene, TX;United States of America;ABI
 Adak Island, AK;United States of America;ADK
 Akiachak, AK;United States of America;KKI
@@ -119,7 +118,7 @@ Cheyenne, WY;United States of America;CYS
 Chicago, IL - Meigs;United States of America;CGX
 Chicago, IL - All airports;United States of America;CHI
 Chicago, IL - Midway;United States of America;MDW
-Chicago, IL - O'Hare;United States of America;ORD
+Chicago, IL - O\'Hare;United States of America;ORD
 Chicken, AK;United States of America;CKX
 Chico, CA;United States of America;CIC
 Chignik, AK - Fisheries;United States of America;KCG
@@ -169,7 +168,7 @@ Denver, CO - Longmont Bus service;United States of America;QWM
 Des Moines, IA;United States of America;DSM
 Detroit, MI - All airports;United States of America;DTT
 Detroit, MI - Metro/Wayne County;United States of America;DTW
-Devil's Lake, ND;United States of America;DVL
+Devil\'s Lake, ND;United States of America;DVL
 Dickinson, ND;United States of America;DIK
 Dillingham, AK;United States of America;DLG
 Dodge City, KS;United States of America;DDC
@@ -225,7 +224,6 @@ Fort Wayne, IN;United States of America;FWA
 Fort Worth/Dallas, TX;United States of America;DFW
 Franklin, PA;United States of America;FKL
 Fresno, CA;United States of America;FAT
-
 Gainesville, FL;United States of America;GNV
 Gallup, NM;United States of America;GUP
 Garden City, KS;United States of America;GCK
@@ -322,16 +320,16 @@ Johnstown, PA;United States of America;JST
 Jonesboro, AR;United States of America;JBR
 Joplin, MO;United States of America;JLN
 Juneau, AK;United States of America;JNU
-Kahului, HI - Island of Maui,;United States of America;OGG
+Kahului, HI - Island of Maui;United States of America;OGG
 Kake, AK;United States of America;KAE
 Kakhonak, AK;United States of America;KNK
 Kalamazoo, MI;United States of America;AZO
-Kalaupapa, HI - Island of Molokai,;United States of America;LUP
+Kalaupapa, HI - Island of Molokai;United States of America;LUP
 Kalskag, AK;United States of America;KLG
 Kaltag, AK;United States of America;KAL
-Kamuela, HI - Island of Hawaii,;United States of America;MUE
+Kamuela, HI - Island of Hawaii;United States of America;MUE
 Kansas City, MO;United States of America;MCI
-Kapalua, HI - Island of Maui,;United States of America;JHM
+Kapalua, HI - Island of Maui;United States of America;JHM
 Kasaan, AK;United States of America;KXA
 Kasigluk, AK;United States of America;KUK
 Kauai Island/Lihue, HI;United States of America;LIH
@@ -409,7 +407,7 @@ Marietta, OH/Parkersburg, WV;United States of America;PKB
 Marion, IL;United States of America;MWA
 Marquette, MI;United States of America;MQT
 Marshall, AK;United States of America;MLL
-Martha's Vineyard, MA;United States of America;MVY
+Martha\'s Vineyard, MA;United States of America;MVY
 Martinsburg, PA;United States of America;AOO
 Mason City, IA;United States of America;MCW
 Massena, NY;United States of America;MSS
@@ -559,7 +557,7 @@ Red Devil, AK;United States of America;RDV
 Redding, CA;United States of America;RDD
 Redmond, OR;United States of America;RDM
 Reno, NV;United States of America;RNO
-Rhinelander, WI,;United States of America;RHI
+Rhinelander, WI;United States of America;RHI
 Richmond, VA;United States of America;RIC
 Riverton, WY;United States of America;RIW
 Roanoke, VA;United States of America;ROA
@@ -581,7 +579,7 @@ Saint Cloud, MN;United States of America;STC
 Saint George Island, AK;United States of America;STG
 Saint George, UT;United States of America;SGU
 Saint Louis, MO;United States of America;STL
-Saint Mary's, AK;United States of America;KSM
+Saint Mary\'s, AK;United States of America;KSM
 Saint Michael, AK;United States of America;SMK
 Saint Paul Island, AK;United States of America;SNP
 Salem, OR;United States of America;SLE
@@ -603,7 +601,7 @@ Santa Maria, CA;United States of America;SMX
 Santa Rosa, CA;United States of America;STS
 Saranac Lake, NY;United States of America;SLK
 Sarasota, FL;United States of America;SRQ
-Sault Ste Marie, MI,;United States of America;CIU
+Sault Ste Marie, MI;United States of America;CIU
 Savannah, GA;United States of America;SAV
 Savoonga, AK;United States of America;SVA
 Scammon Bay, AK;United States of America;SCM
@@ -901,7 +899,7 @@ Lloydminister, AB;Canada;YLL
 London, ON - Rail service;Canada;XDQ
 London, ON - Municipal Airport;Canada;YXU
 Lutselke/Snowdrift, NT;Canada;YSG
-Mary's Harbour, NL;Canada;YMH
+Mary\'s Harbour, NL;Canada;YMH
 Maxville, ON - Rail service;Canada;XID
 Medicine Hat, AB;Canada;YXH
 Melville, SK - Rail service;Canada;XEK
@@ -1041,7 +1039,7 @@ Thicket Portage, MB;Canada;YTD
 Thompson, MB;Canada;YTH
 Thunder Bay, ON;Canada;YQT
 Timmins, ON;Canada;YTS
-Tofino, BC,;Canada;YAZ
+Tofino, BC;Canada;YAZ
 Toronto, ON - Downtown Rail service;Canada;YBZ
 Toronto, ON - Guildwood Rail service;Canada;XLQ
 Toronto, ON - Toronto Island Airport;Canada;YTZ
@@ -1051,7 +1049,7 @@ Tuktoyaktuk, NT;Canada;YUB
 Tulita/Fort Norman, NT;Canada;ZFN
 Umiujag, QC;Canada;YUD
 Uranium City, SK;Canada;YBE
-Val-d'Or, QC;Canada;YVO
+Val-d\'Or, QC;Canada;YVO
 Vancouver, BC - Coal Harbour;Canada;CXH
 Vancouver, BC - Rail service;Canada;XEA
 Vancouver, BC - International;Canada;YVR
@@ -1089,7 +1087,7 @@ Abadan;Iran;ABD
 Abakan;Russia;ABA
 Aberdeen;United Kingdom;ABZ
 Abha;Saudi Arabia;AHB
-Abidjan;Cote d'Ivoire;ABJ
+Abidjan;Cote d\'Ivoire;ABJ
 Abu Dhabi;United Arab Emirates;AUH
 Abu Simbel;Egypt;ABS
 Abuja;Nigeria;ABV
@@ -1217,7 +1215,7 @@ Arica;Chile;ARI
 Arkangelsk;Russia;ARH
 Armenia;Colombia;AXM
 Armidale;Australia;ARM
-Arthur's Town;Bahamas;ATC
+Arthur\'s Town;Bahamas;ATC
 Arua;Uganda;RUA
 Aruba;Aruba;AUA
 Arusha;Tanzania;ARK
@@ -1438,7 +1436,7 @@ Bridgetown;Barbados;BGI
 Brindisi;Italy;BDS
 Brisbane;Queensland;Australia;BNE
 Bristol;United Kingdom;BRS
-Brive-La-Gaillarde;France - LarocheBVE
+Brive-La-Gaillarde;France - Laroche;BVE
 Brno;Czech Republic - Turany;BRQ
 Brno;Czech Republic - Bus service;ZDN
 Broken Hill;Australia;BHQ
@@ -1471,7 +1469,7 @@ Burnie;Australia;BWT
 Busan;South Korea - Gimhae;PUS
 Butuan;Philippines;BXU
 Bydgoszcz;Poland;BZG
-Cabo San Lucas;'Los Cabos';Mexico;SJD
+Cabo San Lucas;\'Los Cabos\';Mexico;SJD
 Caen;France;CFR
 Cagayan De Oro;Philippines - Lumbia;CGY
 Cagliari;Italy;CAG
@@ -1615,7 +1613,7 @@ Corumba;Brazil;CMG
 Corvo Island;Portugal;CVU
 Cotabato;Philippines;CBO
 Cotarou;Benin;COC
-Cox's Bazar;Bangladesh;CXB
+Cox\'s Bazar;Bangladesh;CXB
 Cozumel;Mexico;CZM
 Craig Cove;Vanuatu;CCV
 Criciuma;Brazil;CCM
@@ -1639,7 +1637,7 @@ Daegu;South Korea;TAE
 Dakar;Senegal;DKR
 Dakhla;Morocco;VIL
 Dalaman;Turkey;DLM
-Dalat;Viet Nam - Lienkhang DLI
+Dalat;Viet Nam - Lienkhang;DLI
 Dali City;China;DLU
 Dalian;China;DLC
 Damascus;Syrian Arab Republic;DAM
@@ -1733,7 +1731,7 @@ El Fasher;Sudan;ELF
 El Maiten;Argentina;EMX
 El Obeid;Sudan;EBD
 El Oved;Algeria;ELU
-El Portillo/Samana;Dominician Republic - El PortilloEPS
+El Portillo/Samana;Dominician Republic - El Portillo;EPS
 El Real;Panama;ELE
 El Salvador;Chile;ESR
 El Vigia;Venezuela;VIG
@@ -1823,7 +1821,7 @@ Fuyang;China;FUG
 Fuzhou;China;FOC
 Gaborone;Botswana;GBE
 Gafsa;Tunisia;GAF
-Gagnoa;Cote D'Ivoire;GGN
+Gagnoa;Cote D\'Ivoire;GGN
 Galapagos;Ecuador;GPS
 Gallivare;Sweden;GEV
 Galway;Ireland;GWY
@@ -1851,7 +1849,7 @@ Genoa;Italy;GOA
 George Town;Bahamas;GGT
 George;South Africa;GRJ
 Georgetown;Guyana;GEO
-Geraldton;Australia;;GET
+Geraldton;Australia;GET
 Gerona;Spain;GRO
 Ghadames;Libya;LTD
 Ghardala;Algeria;GHA
@@ -1893,7 +1891,7 @@ Granada;Spain;GRX
 Grand Cayman;Cayman Islands;GCM
 Grand Turk Island;Turks and Caicos Islands;GDT
 Graz;Austria;GRZ
-Grenada;Grenada;;GND
+Grenada;Grenada;GND
 Grenoble;France;GNB
 Griffith;Australia;GFF
 Grimsey;Iceland;GRY
@@ -1901,7 +1899,7 @@ Groennedal;Greenland;JGR
 Groningen;Netherlands;GRQ
 Groofe Eylandt;Australia;GTE
 Guadalajara;Mexico;GDL
-Guam;GUM
+Tamuning;Guam;GUM
 Guanaja;Honduras;GJA
 Guanajuato;Mexico;BJX
 Guangzhou;China;CAN
@@ -1984,7 +1982,7 @@ Hong Kong;Hong Kong;HKG
 Honiara;Solomon Islands;HIR
 Honningsvag;Norway;HVG
 Hooker;Australia;HOK
-Horn Island Australia;HID
+Horn Island; Australia;HID
 Hornafjordur;Iceland;HFN
 Horta;Portugal;HOR
 Hoskins;Papua New Guinea;HKN
@@ -2067,7 +2065,7 @@ Jaipur;India;JAI
 Jakarta;Indonesia;CGK
 Jalapa;Mexico;JAL
 Jaluit Island;Marshall Islands;UIT
-Jambi. Indonesia;DJB
+Jambi;Indonesia;DJB
 Jamnagar;India;JGA
 Janakpur;Nepal;JKR
 Jaque;Panama;JQE
@@ -2148,7 +2146,7 @@ Kavala;Greece;KVA
 Kavieng;Papua New Guinea;KVG
 Kawthaung;Myanmar;KAW
 Kayseri;Turkey;ASR
-Kazan;;Russia;KZN
+Kazan;Russia;KZN
 Kefallinia;Greece;EFL
 Kendari;Indonesia;KDI
 Kerkyra;Greece;CFU
@@ -2666,7 +2664,7 @@ Nema;Mauritania;EMN
 Neryjungri;Russia;NER
 Neuquen;NE;Argentina;NQN
 Nevis;St. Kitts and Nevis;NEV
-New London/Groton;GON
+New London/Groton, CT;United States of America;GON
 New Plymouth;New Zealand;NPL
 Newcastle;New South Wales;Australia - Belmont;BEO
 Newcastle;New South Wales;Australia;NTL
@@ -2683,7 +2681,7 @@ Nicosia;Cyprus;NIC
 Nimes;France;FNI
 Ningbo;China;NGB
 Nioko;Congo;NIX
-Niuafo'ou;Tonga;NFO
+Niuafo\'ou;Tonga;NFO
 Niuatoputapu;Tonga;NTT
 Niue Island;Niue;IUE
 Nizhnevartovsk;Russia;NJC
@@ -2693,7 +2691,7 @@ Ndjamena;Chad;NDJ
 Norderney;Germany;NRD
 Nordholz-Speika;Germany;NDZ
 Norfolk Island;Norfolk Island;NLK
-Noril'sk;Russia;NSK
+Noril\'sk;Russia;NSK
 Normanton;QL;Australia;NTN
 Norrkoping;Sweden;NRK
 Norsup;Vanuatu;NUS
@@ -2714,7 +2712,7 @@ Novosibirsk;Russia - Tolmachevo;OVB
 Nueva Gerona;Cuba;GER
 Nuevo Laredo;Mexico;NLD
 Nuku Hiva;French Polynesia;NHV
-Nuku'Alofa;Tonga;TBU
+Nuku\'Alofa;Tonga;TBU
 Nukus;Uzbekistan;NCU
 Numbulwar;NT;Australia;NUB
 Nunukan;Indonesia;NNX
@@ -3057,7 +3055,7 @@ San Antonio Oesta;RN;Argentina;OES
 San Antonio;Venezuela;SVZ
 San Carlos;Argentina;BRC
 San Jose;Costa Rica - Juan Santa Maria;SJO
-San Jose;Costa Rica - Tobias Bolanos Int'l;SYQ
+San Jose;Costa Rica - Tobias Bolanos Int\'l;SYQ
 San Juan;Puerto Rico;SJU
 San Juan;SJ;Argentina;UAQ
 San Julian;SC;Argentina;ULA
@@ -3071,7 +3069,7 @@ San Rafael;Argentina;AFA
 San Salvador;Bahamas;ZSA
 San Salvador;El Salvador;SAL
 San Sebastian;Spain;EAS
-Sana'a;Yemen;SAH
+Sana\'a;Yemen;SAH
 Sanday;United Kingdom;NDY
 Santa Ana;Solomon Islands;NNB
 Santa Barbara;Ed;Venezuela;STB
@@ -3442,7 +3440,7 @@ Varkaus;Finland;VRK
 Varna;Bulgaria;VAR
 Vasteras;Sweden;VST
 Vatomatry;Madagascar;VAT
-Vava'u;Tonga;VAV
+Vava\'u;Tonga;VAV
 Vaxjo;Sweden;VXO
 V.C. Bird International;Antigua & Barbuda;ANU
 Venice;Italy - Marco Polo;VCE
@@ -3544,7 +3542,7 @@ Yakutsk;Russia;YKS
 Yalumet;Papua New Guinea;KYX
 Yam Island;QL;Australia;XMY
 Yamagata;Japan;GAJ
-Yan'an;China;ENY
+Yan\'an;China;ENY
 Yanbu;Saudi Arabia;YNB
 Yancheng;China;YNZ
 Yandina;Solomon Islands;XYA
