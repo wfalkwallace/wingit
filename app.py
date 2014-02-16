@@ -97,17 +97,22 @@ def search():
 		# items = root.findall('city')
 		# print items
 		#fill dictionary
+
+
 		flight_dict = {}
 		for item in flight:
+			r = requests.get('https://thepulseapi.earthnetworks.com/data/observations/v1/current?location='+str(item.arr_lat)+','+str(item.arr_long)+'&locationtype=latitudelongitude&units=english&cultureinfo=en-en&verbose=true&access_token=SU6OGOpKSMDeD9B3DtqQvEF3ynsI').json()['temperature']
+			print 'request: ', r
 			flight_dict[item.arr_city] = {
-				"dep_country" : item.dep_city,
+				"dep_city" : item.dep_city,
+				"arr_country" : item.arr_country,
 				# "departing_datetime" : item.depart,
 				# "departing_datetime" : item.arrive,
-				"price" : item.price
+				"price" : item.price,
 				#"beer_price" : "",
-				#"temperature" : ""
+				"temperature" : r
 			}
-			print item.arr_city
+			print item.arr_city, item.arr_country
 
 		
 
