@@ -141,8 +141,6 @@ def mail():
 		url = "https://api.sendgrid.com/api/mail.send.json"
 		msg = {}
 
-		subject=Example_Subject&text=testingtextbody&from=info@domain.com
-
 		msg['api_user'] = "wfalkwallace"
 		msg['api_key'] = "wingit"
 		msg['to'] = "wfalkwallace@gmail.com"
