@@ -99,19 +99,19 @@ def search():
 		for airport in all_airports:
 			print airport
 
-		all_flights = Flight.query.filter_by(
-			origin = origin_airport_id
-			).all()
-		print 'all_flights', all_flights
+		# all_flights = Flight.query.filter_by(
+		# 	origin = origin_airport_id
+		# 	).all()
+		# print 'all_flights', all_flights
 
-		trip_type = request.form['trip-type']
+		# trip_type = request.form['trip-type']
 
-		flight= []
-		for item in all_flights:
-			if item.price < price:
-				if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
-					item.etd < datetime.combine(depart_date.date, datetime.time.max):
-						flights.append(item)
+		# flight= []
+		# for item in all_flights:
+		# 	if item.price < price:
+		# 		if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
+		# 			item.etd < datetime.combine(depart_date.date, datetime.time.max):
+		# 				flights.append(item)
 
 		#build db + query pint
 		return render_template("results.html", 
