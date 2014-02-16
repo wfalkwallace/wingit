@@ -25,6 +25,15 @@ class Airport(db.Model):
 		self.country = country
 		self.created_at = datetime.datetime.now()
 
+	def __repr__(self):
+		return "<Airport id = '%s', code = '%s', city = '%s', country = '%s'  >" % \
+		(
+			self.airport_id,
+			self.code,
+			self.city,
+			self.country
+		)
+
 class Flight(db.Model):
 	__tablename__ = 'flights'
 	
@@ -77,35 +86,42 @@ def search():
 		depart_date = request.form['depart']
 		return_date = request.form['return']
 		price = request.form['price']
+		# trip_type = request.form['trip-type']
 
 		# print request.form['oneway']
 		# print request.form['roundtrip']
 		print 'origin: ', origin 
-		
-		origin_airport_id = Airport.query.filter_by(code=origin).first().airport_id
-		print 'origin_airport_id ', origin_airport_id
 
-		all_flights = Flight.query.filter_by(
-			origin = origin_airport_id
-			).all()
-		print 'all_flights', all_flights
+		#origin_airport_id = Airport.query.filter_by(code = origin).first().airport_id
 
-		trip_type = request.form['trip-type']
+		#print 'origin_airport_id ', origin_airport_id
 
-		flight= []
-		for item in all_flights:
-			if item.price < price:
-				if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
-					item.etd < datetime.combine(depart_date.date, datetime.time.max):
-						flights.append(item)
+		all_airports = Airport.query.all()
+		for airport in all_airports:
+			print airport
+		all_airports = Airport.query.count()
+		print 'all_airport_count', all_airports
+		# all_flights = Flight.query.filter_by(
+		# 	origin = origin_airport_id
+		# 	).all()
+		# print 'all_flights', all_flights
+
+		# trip_type = request.form['trip-type']
+
+		# flight= []
+		# for item in all_flights:
+		# 	if item.price < price:
+		# 		if datetime.combine(depart_date.date, datetime.time.min) < item.etd and \
+		# 			item.etd < datetime.combine(depart_date.date, datetime.time.max):
+		# 				flights.append(item)
 
 		#build db + query pint
 		return render_template("results.html", 
 								origin=origin, 
 								depart_date=depart_date,
 								return_date=return_date,
-								price=price,
-								trip_type=trip_type)
+								price=price)
+								# trip_type=trip_type)
 	else: # request.method == "GET"
 		return render_template("search.html")
 

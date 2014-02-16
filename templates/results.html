@@ -56,17 +56,18 @@
               <div class="btn-group btn-group-justified" data-toggle="buttons">
                 {% if trip_type == "oneway" %}
                 <label class="btn btn-primary active">
+                {% endif %}
                   {% if trip_type != "oneway" %}
                   <label class="btn btn-primary">
-                    {% endif %}
+                  {% endif %}
                     <input type="radio" class="active" name="trip-type" id="one-way-toggle" value="oneway"> One Way
                   </label>
                   {% if trip_type != "oneway" %}
                   <label class="btn btn-primary active">
-                    {% endif %}
-                    {% if trip_type == "oneway" %}
+                  {% endif %}
+                  {% if trip_type == "oneway" %}
                     <label class="btn btn-primary">
-                    {% endif %}
+                  {% endif %}
                     <input type="radio" class="active" name="trip-type" id="roundtrip" value="roundtrip"> Roundtrip
                   </label>
                 </div>
@@ -81,14 +82,6 @@
         </div>
       </div>
       <div class="col-md-9">
-
-      <div class="list-group">
-                  {% for contact in contacts %}
-                  <a href="/user/contact/{{ contact.contact_id }}" class="list-group-item">
-                    <h4 class="list-group-item-heading">{{ contact.contact_name }}</h4>
-                  </a>
-                  {% endfor %}
-                </div>
 
       </div>
     </div>
