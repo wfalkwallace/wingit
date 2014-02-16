@@ -14,11 +14,23 @@ def search():
 		depart_date = request.form['message']
 		return_date = request.form['message']
 		price = request.form['message']
+	#db get by above; put into vars in dict as price, dest, ....
+	#
+	#api.get by above put into 
+	# for api call
+	# price =  resp.price 
+	# dict["price" = price]
+	#model for flights_dict:
+	#list: 
+	#item: {origin: JFK, dest:LHR, price:500, beer:1.62, },
+	#build flights_dict here
+	##add weather info to flights_dict
+	#add beer info to flights_dict
 
 
 
 
-		return render_template("signup.html", signup_email=request.form["register_email"])
+		return render_template("results.html", signup_email=request.form["register_email"])
 	else: # request.method == "GET"
 		return render_template("search.html")
 
