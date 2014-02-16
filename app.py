@@ -25,6 +25,15 @@ class Airport(db.Model):
 		self.country = country
 		self.created_at = datetime.datetime.now()
 
+	def __repr__(self):
+		return "<Airport id = '%s', code = '%s', city = '%s', country = '%s'  >" % \
+		(
+			self.airport_id,
+			self.code,
+			self.city,
+			selfc.country
+		)
+
 class Flight(db.Model):
 	__tablename__ = 'flights'
 	
@@ -82,8 +91,13 @@ def search():
 		# print request.form['roundtrip']
 		print 'origin: ', origin 
 		
-		origin_airport_id = Airport.query.filter_by(code = origin).first().airport_id
-		print 'origin_airport_id ', origin_airport_id
+		#origin_airport_id = Airport.query.filter_by(code = origin).first().airport_id
+
+		#print 'origin_airport_id ', origin_airport_id
+
+		all_airports = Airport.query.all()
+		for airport in all_airports:
+			print airport
 
 		all_flights = Flight.query.filter_by(
 			origin = origin_airport_id
